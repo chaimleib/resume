@@ -3,22 +3,37 @@
   display: inline-block;
   right: 10px;
   top: 10px;
+  font-family: "Times New Roman", "Times", serif
 }
 
 h1 {
   text-align: center;
-  padding: 0;
   margin-top: 0;
   margin-bottom: 8px;
 }
 
 h2 {
   font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-variant-caps: small-caps;
 }
 
 h3 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4px;
+}
+
+h4 {
   text-align: center;
-  padding: 0;
   margin: 0;
   font-size: 12px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 4px;
+  text-indent: 4px;
 }
