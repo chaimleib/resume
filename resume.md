@@ -1,34 +1,41 @@
 <div id="bsd" dir="rtl">בס״ד</div>
-### 6803 N 17th St., Phoenix, AZ 85016
-### github.com/chaimleib chaim.leib.halbert@gmail.com
+#### 6803 N 17th St., Phoenix, AZ 85016
+#### github.com/chaimleib — chaim.leib.halbert@gmail.com
 
 ## Work experience
-**Web Software Engineer and Systems Architect, Evernote** (2016-current)
-Re-architected and migrated evernote.com from PHP with AWS to Go with Google Cloud Appengine. Tooling for deploy, preview, unit test, data-code consistency test, and code quality. Customer-facing note editor in React, microservices design, multithreaded, asynchronous and concurrent programming, Crownpeak CMS support, site health monitoring and reliability engineering, development process engineering via API design and dev tooling, Jenkins continuous integration testing, Google Cloud Platform scaling, hosting, Pub/Sub, storage, secrets management. Atlassian JIRA and Confluence, BitBucket, Jenkins, DataDog, PagerDuty. Go, Node.js/JavaScript, React, jquery, Typescript, C#, bash, MySQL, Docker, PHP.
+### **Web Software Engineer and Systems Architect, Evernote** (2016-current)
 
-**Software Engineer, Coupa Software** (2015 – 2016)
+Re-architected and migrated evernote.com from PHP with AWS to Go with Google Cloud Appengine. Tooling for deploy, preview, unit test, data-code consistency test, and code quality. Customer-facing note editor in React, microservices design, multithreaded, asynchronous and concurrent programming, Crownpeak CMS support, site health monitoring and reliability engineering, development process engineering via API design and dev tooling, Jenkins continuous integration testing. Google Cloud Platform for scaling, hosting, Pub/Sub, BigQuery, storage, secrets management. Google Analytics, Google Tag Manager, Optimizely experiments platform. Atlassian JIRA and Confluence, BitBucket, Jenkins, DataDog, PagerDuty. Go, Node.js/JavaScript, React, jquery, Typescript, C#, bash, MySQL, Docker, PHP.
+
+### **Software Engineer, Coupa Software** (2015 – 2016)
+
 Ruby on Rails, Bootstrap, Turnip unit tests, Jenkins, and bash. Optimized RSpec test harness to work 30% faster; developed in-browser integration tests and unit tests; cooperated via AGILE with hundreds of developers using GitHub and Atlassian JIRA.
 
-**Software Engineer Intern, Rustici Software** (2014)
+### **Software Engineer Intern, Rustici Software** (2014)
+
 Created Python client library for TinCan API (xAPI 2.0) and created a JSON object verifier and recognizer using JSON Schema and Node.js/JavaScript. Worked on five-person team using GitHub.
 
-**Industrial Controls Engineer, Bridgestone** (2012)
+### **Industrial Controls Engineer, Bridgestone** (2012)
+
 Designed industrial controls and safety systems with AutoCAD Electrical, CoDeSys, and RSLogix. Coded PLCs in structured text (IEC 61131-3) and ladder logic, and created AutoCAD plugins with C#, Visual Basic, and LISP.
 
-**Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (2010)
+### **Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (2010)
+
 Developed a cross-browser AJAX-based experiment log system; customized open-source software. Used PHP, JavaScript, MySQL, TinyMCE, ssh, vim, Red Hat Linux.
 
 ## Volunteer experience
-**Software Engineer, Chabad of the Greater South Bay** (2016 – 2020)
+### **Software Engineer, Chabad of the Greater South Bay** (2016 – 2020)
+
 Maintained web site and redesigned UI using Bootstrap and AngularJS.
 
-**Web Engineer and Graphic Designer, Chabad of the East Bay** (2013-2014)
+### **Web Engineer and Graphic Designer, Chabad of the East Bay** (2013-2014)
+
 Programmed with Google Spreadsheets API, developed CiviCRM web site, and created vector logo in Inkscape and Illustrator.
 
 ## Technical knowledge & skills
-**General**: Expert in Go, Java, Python, Ruby, JavaScript and bash shell, and codes in more than 50 languages, picking up new ones quickly. Intimately familiar with git internals. Familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, Eclipse and others, while tending to use tmux and vim for daily drivers.
+**General**: Expert and actively working in Go, C#, JavaScript, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, C, VB, and vimscript. Experience in more than 50 languages, picking up new ones quickly. Intimately familiar with git internals. Familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, Eclipse and others, while tending to use tmux and vim for daily drivers.
 
-**Development process engineering**: Designs systems and operating procedures customized to team skillsets and tools.
+**Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for five years and are still going strong.
 
 **Security**: Strong awareness of potential attack vectors to help avoid developer-induced vulnerabilities. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
 
@@ -37,7 +44,8 @@ Programmed with Google Spreadsheets API, developed CiviCRM web site, and created
 **Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Created special and general-purpose processors in Verilog hardware definition language.
 
 ## Education
-**University of California, Berkeley – College of Engineering** (2008-2014)
+### **University of California, Berkeley – College of Engineering** (2008-2014)
+
 Studied Electrical Engineering and Computer Science. Courses covered AI, computer graphics, compilers, embedded systems, and DSP. Assignments were completed in Python, C, C++, Java, JavaScript, Matlab, Scheme, and Latex. Nearly all technical courses required ssh to bash shell on Solaris or CentOS, GNU Makefile, and some sort of VCS, usually git.
 
 ## Extended details
