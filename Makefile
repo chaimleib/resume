@@ -1,6 +1,8 @@
 all:
+	mkdir -p build
+	cp style.css build/
 	pandoc -s \
-		-c resume.css \
-		--metadata title="Chaim Raymond Halbert" \
+		-c style.css \
+		--metadata title="Chaim Halbert" \
 		resume.md \
-		-o resume.html
+		-o build/index.html
