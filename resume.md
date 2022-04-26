@@ -2,10 +2,31 @@
 #### 6803 N 17th St., Phoenix, AZ 85016
 #### github.com/chaimleib — chaim.leib.halbert@gmail.com
 
-## Work experience
-### **Web Software Engineer and Systems Architect, Evernote** (2016-current)
+## Skills
 
-Re-architected and migrated evernote.com from PHP with AWS to Go with Google Cloud Appengine. Tooling for deploy, preview, unit test, data-code consistency test, and code quality. Customer-facing note editor in React, microservices design, multithreaded, asynchronous and concurrent programming, Crownpeak CMS support, site health monitoring and reliability engineering, development process engineering via API design and dev tooling, Jenkins continuous integration testing. Google Cloud Platform for scaling, hosting, Pub/Sub, BigQuery, storage, secrets management. Google Analytics, Google Tag Manager, Optimizely experiments platform. Atlassian JIRA and Confluence, BitBucket, Jenkins, DataDog, PagerDuty. Go, Node.js/JavaScript, React, jquery, Typescript, C#, bash, MySQL, Docker, PHP.
+* &gt;50 programming languages for different purposes, cross-pollinates concepts between them. Currently working with about seven programming languages (Go, JS, C#, PHP, Java, bash/zsh shell, awk)
+* Designs recursively-linked data structures and algorithms
+* Multithreaded, asynchronous and concurrent programming
+
+## Work experience
+### **Web Software Engineer and Microservices Architect, Evernote** (2016-current)
+
+* Team process engineering - How can I make our work easy and fun? What will likely become a bottleneck? Is training/tooling/re-architecting the best way to solve this?
+* Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine. It lasted for five years and is still going strong (four previous attempts lived on average two years or less).
+  * Designed and implemented Go, JSON content and HTML template organization to encourage modularizing and reusing HTML components.
+  * Shell script, Node.js and Go tooling for deploy, preview, unit test, data-code consistency test, and code quality (npm/yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
+  * Crownpeak CMS support for codeless website content updates (C#, command-line SSH/SFTP, Google Cloud Storage).
+    * Created Mac/Linux command-line tool for Crownpeak CMS in Go, to read, delete, un-delete, create, modify, and advanced-search for pages on the CMS. The web GUI was too slow, and this allowed scripting hundreds of actions at once, normally inconvenient or impossible using the restricted C# API alone. Discovered and implemented undocumented functions of the HTTP-based Crownpeak Connect API.
+  * Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, Go HTML template files, URLs, CMS content JSONs, etc. Answers frequent questions like "Which pages use this HTML component?" or the inverse, or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
+  * Implemented caching and exponential backoff and retry for server-side requests in Go.
+  * GeoIP lookups for country-specific sales events in Go.
+  * Configured site health monitoring and reliability engineering using Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty.
+  * Analytics via Google Analytics Commerce and Google BigQuery.
+* Content Delivery Network (CDN) created from scratch using Google Cloud Storage for Iterable email assets.
+* Maintained Wordpress blog in PHP (WPML, webpack, SCSS).
+* Maintained customer-facing note editor in React, with Java backend.
+* Jenkins continuous integration testing (BitBucket-Jenkins integration). No code changes are allowed into the master git branch unless the test suite passes.
+* Google Cloud Platform for scaling, hosting, Pub/Sub, BigQuery, storage, secrets management. Google Analytics, Google Tag Manager, Optimizely experiments platform. Atlassian JIRA and Confluence, BitBucket, Jenkins, DataDog, PagerDuty. Go, Node.js/JavaScript, React, jquery, Typescript, C#, bash, MySQL, Docker, PHP.
 
 ### **Software Engineer, Coupa Software** (2015 – 2016)
 
