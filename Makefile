@@ -6,3 +6,8 @@ all:
 		--metadata title="Chaim Halbert" \
 		resume.md \
 		-o build/index.html
+
+clean:
+	rm -rf build
+
+.PHONY: all clean
