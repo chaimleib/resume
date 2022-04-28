@@ -4,29 +4,63 @@
 
 ## Skills
 
-* &gt;50 programming languages for different purposes, cross-pollinates concepts between them. Currently working with about seven programming languages (Go, JS, C#, PHP, Java, bash/zsh shell, awk)
-* Designs recursively-linked data structures and algorithms
-* Multithreaded, asynchronous and concurrent programming
+**Coding**: &gt;50 programming languages for different purposes, cross-pollinates concepts between them, constantly learning more (currently Rust). Expert and actively working in Go, C#, JS/Node.js, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, and C. Designs recursively-linked data structures and algorithms. Has written multithreaded, asynchronous and concurrent code in Go, Python, JS, C, Java and bash shell. Intimately familiar with git internals. Uses tmux and vim daily, and familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, Eclipse and others.
+
+**Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for five years and are still going strong.
+
+**Security and privacy**: Awareness of potential attack vectors helps catch vulnerabilities at code review. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
+
+**Web technologies**: Experienced in Go, Node.js, React, SCSS, Webpack, Ruby on Rails, and Django for full stack web development. Occasionally crafts SQL queries, but prefers to build queries with libraries to avoid vulnerabilities.
+
+**Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Created special and general-purpose processors in Verilog hardware definition language.
+
+## Notable personal and school projects
+
+**Completed Linux From Scratch** in 2006 and 2021 (https://www.linuxfromscratch.org/lfs/). Compiled and configured a complete Linux system from C/C++ source code and the command line.
+
+**chaimleib.com personal website and JS audio player (zichronos)**, 2014 onward. TLS certificate/HTTPS. Static pages and media generated using Ruby, Bash and SCSS, audio player using JS+jQuery, images with Inkscape.
+
+**github.com/chaimleib/intervaltree**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is currently the industry reference implementation of interval trees in Python, cited in numerous academic research papers for gene research and computer vision applications, etc.
+
+**USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer. Written in C for Atmega32u4 microcontroller (Teensy 1.0).
+
+**Bluetooth headtracker and 2-axis gimballed illuminator**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. Python, finite state machine program architecture, Raspberry Pi, Nintendo Wii controller, RS485 serial servos.
+
+**Machine learning-based handwritten digit recognizer**, Coursera August 2012 with Prof. Andrew Ng. Written in Octave, an open-source clone of Matlab.
+
+**Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
 
 ## Work experience
 ### **Web Software Engineer and Microservices Architect, Evernote** (2016-current)
 
-* Team process engineering - How can I make our work easy and fun? What will likely become a bottleneck? Is training/tooling/re-architecting the best way to solve this?
-* Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine. It lasted for five years and is still going strong (four previous attempts lived on average two years or less).
-  * Designed and implemented Go, JSON content and HTML template organization to encourage modularizing and reusing HTML components.
-  * Shell script, Node.js and Go tooling for deploy, preview, unit test, data-code consistency test, and code quality (npm/yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
-  * Crownpeak CMS support for codeless website content updates (C#, command-line SSH/SFTP, Google Cloud Storage).
-    * Created Mac/Linux command-line tool for Crownpeak CMS in Go, to read, delete, un-delete, create, modify, and advanced-search for pages on the CMS. The web GUI was too slow, and this allowed scripting hundreds of actions at once, normally inconvenient or impossible using the restricted C# API alone. Discovered and implemented undocumented functions of the HTTP-based Crownpeak Connect API.
-  * Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, Go HTML template files, URLs, CMS content JSONs, etc. Answers frequent questions like "Which pages use this HTML component?" or the inverse, or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
-  * Implemented caching and exponential backoff and retry for server-side requests in Go.
-  * GeoIP lookups for country-specific sales events in Go.
-  * Configured site health monitoring and reliability engineering using Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty.
-  * Analytics via Google Analytics Commerce and Google BigQuery.
-* Content Delivery Network (CDN) created from scratch using Google Cloud Storage for Iterable email assets.
-* Maintained Wordpress blog in PHP (WPML, webpack, SCSS).
-* Maintained customer-facing note editor in React, with Java backend.
-* Jenkins continuous integration testing (BitBucket-Jenkins integration). No code changes are allowed into the master git branch unless the test suite passes.
-* Google Cloud Platform for scaling, hosting, Pub/Sub, BigQuery, storage, secrets management. Google Analytics, Google Tag Manager, Optimizely experiments platform. Atlassian JIRA and Confluence, BitBucket, Jenkins, DataDog, PagerDuty. Go, Node.js/JavaScript, React, jquery, Typescript, C#, bash, MySQL, Docker, PHP.
+**Team process engineering**: How can I make our work easy and fun? What will likely become a bottleneck? Is training/tooling/re-architecting the best way to solve this?
+
+**Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** over 6 months: It has lasted for five years and is still going strong (four previous attempts by other devs lived on average 18 months each).
+
+* Designed and implemented Go, JSON content and HTML template organization to encourage modularizing and reusing HTML components.
+* Shell script, Node.js and Go tooling for deploy, preview, unit test, data-code consistency test, and code quality (npm/yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
+* Crownpeak CMS support for codeless website content updates (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
+  * Connected to in-house semi-automated translations platform via Google Cloud Compute instance as an adapter server.
+  * Created Mac/Linux command-line tool in Go, to modify and query pages on the CMS. The web GUI was too slow, and this allowed scripting hundreds of actions at once, normally inconvenient or impossible using the restricted C# API alone. Discovered and implemented undocumented functions of the Crownpeak Connect API via the Chome Network inspector.
+* Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, HTML template files, URLs, etc. It answers frequent questions like "Which pages use this HTML component?" or the inverse, or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
+* Implemented caching and exponential backoff and retry for server-side requests in Go.
+* GeoIP lookups for country-specific sales events in Go.
+* Configured site health monitoring and reliability engineering using Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty.
+* Analytics via Google Analytics Commerce and Google BigQuery.
+
+**Content Delivery Network (CDN)**: created from scratch using Google Cloud Storage. For images in Iterable promo email campaigns.
+
+**Wordpress blog**: custom theme, extra fields and a WPML translation system. PHP, webpack, SCSS.
+
+**Browser-based note editor and checkout flow in React**: Typescript frontend and Java backend.
+
+**Jenkins continuous integration testing (BitBucket-Jenkins integration)**: No code changes are allowed into the master git branch unless the test suite passes.
+
+**Google Cloud Platform**: scaling, hosting, Pub/Sub, BigQuery, storage, secrets management.
+
+**Analytics and site experiments**: Google Analytics, Google Tag Manager, Optimizely experiments platform.
+
+**Communication**: Slack, Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty.
 
 ### **Software Engineer, Coupa Software** (2015 – 2016)
 
@@ -53,17 +87,6 @@ Maintained web site and redesigned UI using Bootstrap and AngularJS.
 
 Programmed with Google Spreadsheets API, developed CiviCRM web site, and created vector logo in Inkscape and Illustrator.
 
-## Technical knowledge & skills
-**General**: Expert and actively working in Go, C#, JavaScript, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, C, VB, and vimscript. Experience in more than 50 languages, picking up new ones quickly. Intimately familiar with git internals. Familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, Eclipse and others, while tending to use tmux and vim for daily drivers.
-
-**Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for five years and are still going strong.
-
-**Security**: Strong awareness of potential attack vectors to help avoid developer-induced vulnerabilities. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
-
-**Web technologies**: Experienced in React, AngularJS, SCSS, Webpack, MySQL, Rails, and Django for reactive, cross-browser, full stack web development.
-
-**Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Created special and general-purpose processors in Verilog hardware definition language.
-
 ## Education
 ### **University of California, Berkeley – College of Engineering** (2008-2014)
 
@@ -80,7 +103,7 @@ Studied Electrical Engineering and Computer Science. Courses covered AI, compute
 
 **Shell languages**: bash, zsh, dash, tcsh, Windows BAT
 
-**Tool languages**: GNU Makefile, BC, YACC, Bison, vimscript, awk, Regular expressions, sed
+**Tool languages**: GNU Makefile, Docker, BC, YACC, Bison, vimscript, awk, Regular expressions, sed, jq, yq
 
 **Assembly and machine language architectures**: MIPS, ARM, AVR, Z80, 6502
 
@@ -91,11 +114,12 @@ Studied Electrical Engineering and Computer Science. Courses covered AI, compute
 **Hardware description languages**: Verilog and System Verilog, VHDL
 
 **Industrial languages**: Structured text (IEC 61131-3), ladder logic, function block
+
 **Markup languages**: Go template, ERB, HAML, Markdown, HTML, HTML5, CSS, Lilypond, LaTeX, Tikz, OpenXML
 
 **Data storage and transmission languages**: JSON, YAML, XML, Protobuf, GNU config, Plist
 
-**Libraries**: Angular.js, React.js, Bootstrap, JQuery, Selenium web driver, TinyMCE, Cocoa, Quartz, OpenGL, Core Foundation, Core Graphics, Jenkins, Solano, BeautifulSoup, LibXML, OpenMP, SDL, tv4 JSON validator, DatabaseCleaner, LUFA, Arduino
+**Libraries**: React, JQuery, Angular, Bootstrap, Selenium web driver, TinyMCE, Cocoa, Quartz, OpenGL, Core Foundation, Core Graphics, Jenkins, Solano, BeautifulSoup, LibXML, OpenMP, SDL, tv4 JSON validator, DatabaseCleaner, LUFA, Arduino
 
 **Operating systems**: macOS X, Windows, Linux, Cygwin, CentOS, Arch, Manjaro, Ubuntu, Debian, Fedora, Red Hat Linux, Linux Mint, Slackware, LFS Linux From Scratch, OpenWRT, DD-WRT, Embedded Linux, RTOS
 
