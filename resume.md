@@ -4,11 +4,11 @@
 
 ## Skills
 
-**Coding**: &gt;50 programming languages for different purposes, cross-pollinates concepts between them, constantly learning more (currently Rust). Expert and actively working in Go, C#, JS/Node.js, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, and C. Designs recursively-linked data structures and algorithms. Has written multithreaded, asynchronous and concurrent code in Go, Python, JS, C, Java and bash shell. Intimately familiar with git internals. Uses tmux and vim daily, and familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, Eclipse and others.
+**Coding**: &gt;50 programming languages for different purposes, cross-pollinates concepts between them, constantly learning more (currently Rust). Expert and actively working in Go, C#, JS/Node.js, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, and C. Designs recursively-linked data structures and algorithms. Has written multithreaded, asynchronous and concurrent code in Go, Python, JS, C, Java and bash shell. Intimately familiar with git internals. Uses tmux and vim daily, and familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, and Eclipse.
 
 **Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for five years and are still going strong.
 
-**Security and privacy**: Awareness of potential attack vectors helps catch vulnerabilities at code review. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
+**Security and privacy**: Catches potential attack vectors at code review. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
 
 **Web technologies**: Experienced in Go, Node.js, React, SCSS, Webpack, Ruby on Rails, and Django for full stack web development. Occasionally crafts SQL queries, but prefers to build queries with libraries to avoid vulnerabilities.
 
@@ -24,9 +24,9 @@
 
 **USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer. Written in C for Atmega32u4 microcontroller (Teensy 1.0).
 
-**Bluetooth headtracker and 2-axis gimballed illuminator**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. Python, finite state machine program architecture, Raspberry Pi, Nintendo Wii controller, RS485 serial servos.
+**2-axis gimballed spotlight with IR camera target tracker**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. Python, finite state machine program architecture, Raspberry Pi, Bluetooth, Nintendo Wii controller, RS485 serial servos.
 
-**Machine learning-based handwritten digit recognizer**, Coursera August 2012 with Prof. Andrew Ng. Written in Octave, an open-source clone of Matlab.
+**Handwritten digit recognizer**, Coursera.com Machine Learning, August 2012 with Prof. Andrew Ng. Written in Octave, an open-source clone of Matlab.
 
 **Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
 
@@ -37,16 +37,18 @@
 
 **Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** over 6 months: It has lasted for five years and is still going strong (four previous attempts by other devs lived on average 18 months each).
 
-* Designed and implemented Go, JSON content and HTML template organization to encourage modularizing and reusing HTML components.
-* Shell script, Node.js and Go tooling for deploy, preview, unit test, data-code consistency test, and code quality (npm/yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
-* Crownpeak CMS support for codeless website content updates (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
-  * Connected to in-house semi-automated translations platform via Google Cloud Compute instance as an adapter server.
-  * Created Mac/Linux command-line tool in Go, to modify and query pages on the CMS. The web GUI was too slow, and this allowed scripting hundreds of actions at once, normally inconvenient or impossible using the restricted C# API alone. Discovered and implemented undocumented functions of the Crownpeak Connect API via the Chome Network inspector.
+* Designed and implemented HTML template system and compatibility checkers to ensure that all JSON data remains valid with the templates even when templates change.
+* Codeless (and engineer-less) content updates via Crownpeak CMS (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
+  * Created command-line tool in Go (Mac/Linux) to modify and query pages and C# sources on the CMS
+  * Designed and built microservice to automate translation updates in 26 languages
+  * Adapter microservices to take SFTP from CMS and mirror changes to git and Google Cloud Storage
+  * Automatic Slack notifications for file changes (Google Cloud Storage, Google Cloud Pub/Sub, Google Key Management Service, Go, Slack API)
+* New tooling for deploy, preview, unit test, and code quality (Go, yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
 * Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, HTML template files, URLs, etc. It answers frequent questions like "Which pages use this HTML component?" or the inverse, or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
 * Implemented caching and exponential backoff and retry for server-side requests in Go.
-* GeoIP lookups for country-specific sales events in Go.
-* Configured site health monitoring and reliability engineering using Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty.
-* Analytics via Google Analytics Commerce and Google BigQuery.
+* GeoIP lookups (e.g. for country-specific sales events), automatically updated weekly (Jenkins, Go, MaxMindDB, Google Cloud Pub/Sub)
+* Configured site health monitoring and reliability engineering (Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty)
+* Analytics (Google Analytics: Commerce, Google BigQuery)
 
 **Content Delivery Network (CDN)**: created from scratch using Google Cloud Storage. For images in Iterable promo email campaigns.
 
