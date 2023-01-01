@@ -1,50 +1,42 @@
 <div id="bsd" dir="rtl">בס״ד</div>
-#### 6803 N 17th St., Phoenix, AZ 85016
+#### Phoenix, AZ 85016
 #### github.com/chaimleib — chaim.leib.halbert@gmail.com
+
+## Goals
+* Innovative backend/full-stack engineering or hardware design employment
+* Remote or in Phoenix area
+* Produce and iterate on a product demonstrating concrete consumer value, e.g. an app, website, appliance or device
+* Protect privacy, empower the customer
 
 ## Skills
 
-**Coding**: &gt;50 programming languages for different purposes, cross-pollinates concepts between them, constantly learning more (currently Rust). Expert and actively working in Go, C#, JS/Node.js, bash and zsh shell, awk, and PHP. Recent work and personal project experience in Java, TypeScript, Python, Ruby, and C. Designs recursively-linked data structures and algorithms. Has written multithreaded, asynchronous and concurrent code in Go, Python, JS, C, Java and bash shell. Intimately familiar with git internals. Uses tmux and vim daily, and familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, and Eclipse.
+**Coding**: &gt;50 programming languages for different purposes, cross-pollinates concepts between them, constantly learning more (currently Bison). Expert and actively working in Go, C#, JS/Node.js, bash and zsh shell, and awk. Recent work and personal project experience in Java, TypeScript, Python, Ruby, and C. Designs recursively-linked data structures and algorithms. Has written multithreaded, asynchronous and concurrent code in Go, Python, JS, C, Java and bash shell. Intimately familiar with git internals. Uses tmux and vim daily, and familiar with several IDEs, including Visual Studio Code, IntelliJ (and family), Xcode, and Eclipse.
 
-**Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for five years and are still going strong.
+**Development process engineering**: Designs customized systems and operating procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong.
 
-**Security and privacy**: Catches potential attack vectors at code review. Keeps coworkers and customers protected as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
+**Security and privacy**: Catches potential attack vectors at code review. Protects coworkers' and customers' privacy as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done.
 
-**Web technologies**: Experienced in Go, Node.js, React, SCSS, Webpack, Ruby on Rails, and Django for full stack web development. Occasionally crafts SQL queries, but prefers to build queries with libraries to avoid vulnerabilities.
+**Web technologies**: Experienced in Go, Node.js, React, SCSS, Webpack, Ruby on Rails, and Django for full stack web development.
 
-**Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Created special and general-purpose processors in Verilog hardware definition language.
+**Electronics**: Designed with industrial PLCs, Arduino, Raspberry Pi, and TI microcontrollers. Designed and built analog (audio-frequency) and digital circuit boards. Implemented custom processors in Verilog for Xilinx FPGAs.
 
-## Notable personal and school projects
-
-**Completed Linux From Scratch** in 2006 and 2021 (https://www.linuxfromscratch.org/lfs/). Compiled and configured a complete Linux system from C/C++ source code and the command line.
-
-**chaimleib.com personal website and JS audio player (zichronos)**, 2014 onward. TLS certificate/HTTPS. Static pages and media generated using Ruby, Bash and SCSS, audio player using JS+jQuery, images with Inkscape.
-
-**github.com/chaimleib/intervaltree**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is currently the industry reference implementation of interval trees in Python, cited in numerous academic research papers for gene research and computer vision applications, etc.
-
-**USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer. Written in C for Atmega32u4 microcontroller (Teensy 1.0).
-
-**2-axis gimballed spotlight with IR camera target tracker**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. Python, finite state machine program architecture, Raspberry Pi, Bluetooth, Nintendo Wii controller, RS485 serial servos.
-
-**Handwritten digit recognizer**, Coursera.com Machine Learning, August 2012 with Prof. Andrew Ng. Written in Octave, an open-source clone of Matlab.
-
-**Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
+**Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems.
 
 ## Work experience
-### **Web Software Engineer and Microservices Architect, Evernote** (2016-current)
+### **Web Software Engineer and Microservices Architect, Evernote** (2016-present)
 
 **Team process engineering**: How can I make our work easy and fun? What will likely become a bottleneck? Is training/tooling/re-architecting the best way to solve this?
 
-**Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** over 6 months: It has lasted for five years and is still going strong (four previous attempts by other devs lived on average 18 months each).
+**Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** over 6 months: It has lasted for six years and is still going strong (four previous attempts by other devs lived on average 18 months each).
 
-* Designed and implemented HTML template system and compatibility checkers to ensure that all JSON data remains valid with the templates even when templates change.
+* Designed and implemented HTML template system and compatibility checkers to ensure that all JSON data remains valid even as templates change.
 * Codeless (and engineer-less) content updates via Crownpeak CMS (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
   * Created command-line tool in Go (Mac/Linux) to modify and query pages and C# sources on the CMS
-  * Designed and built microservice to automate translation updates in 26 languages
+  * Designed and built microservice to automate updates from translation service in 26 languages
   * Adapter microservices to take SFTP from CMS and mirror changes to git and Google Cloud Storage
   * Automatic Slack notifications for file changes (Google Cloud Storage, Google Cloud Pub/Sub, Google Key Management Service, Go, Slack API)
 * New tooling for deploy, preview, unit test, and code quality (Go, yarn, webpack, nvm/fnm, bash/zsh, rsync, node-sass/Dart SASS, prettier, eslint, goimports, golint-ci).
-* Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, HTML template files, URLs, etc. It answers frequent questions like "Which pages use this HTML component?" or the inverse, or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
+* Created chainable command-line search tools in bash shell script to list assets related by (e.g.) shared JS sources, HTML template files, URLs, etc. It answers frequent questions like "Which pages use this HTML component?" or the inverse; or "Which translation languages are available for this URL?" etc. (bash, awk, grep, sed, jq/yq, xargs, etc.)
 * Implemented caching and exponential backoff and retry for server-side requests in Go.
 * GeoIP lookups (e.g. for country-specific sales events), automatically updated weekly (Jenkins, Go, MaxMindDB, Google Cloud Pub/Sub)
 * Configured site health monitoring and reliability engineering (Google StackDriver logs, Google BigQuery logging, Pingdom, DataDog and PagerDuty)
@@ -52,17 +44,15 @@
 
 **Content Delivery Network (CDN)**: created from scratch using Google Cloud Storage. For images in Iterable promo email campaigns.
 
-**Wordpress blog**: custom theme, extra fields and a WPML translation system. PHP, webpack, SCSS.
-
-**Browser-based note editor and checkout flow in React**: Typescript frontend and Java backend.
+**Browser-based note editor and checkout flow**: Typescript+React frontend and Java backend.
 
 **Jenkins continuous integration testing (BitBucket-Jenkins integration)**: No code changes are allowed into the master git branch unless the test suite passes.
 
 **Google Cloud Platform**: scaling, hosting, Pub/Sub, BigQuery, storage, secrets management.
 
-**Analytics and site experiments**: Google Analytics, Google Tag Manager, Optimizely experiments platform.
+**Analytics and site experiments**: Used Google Analytics, Google Tag Manager, and Optimizely experiments platform with suspicion.
 
-**Communication**: Slack, Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty.
+**Communication**: Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty.
 
 ### **Software Engineer, Coupa Software** (2015 – 2016)
 
@@ -80,14 +70,20 @@ Designed industrial controls and safety systems with AutoCAD Electrical, CoDeSys
 
 Developed a cross-browser AJAX-based experiment log system; customized open-source software. Used PHP, JavaScript, MySQL, TinyMCE, ssh, vim, Red Hat Linux.
 
-## Volunteer experience
-### **Software Engineer, Chabad of the Greater South Bay** (2016 – 2020)
+## Notable personal and school projects
+**Completed Linux From Scratch** in 2006 and 2021 (https://www.linuxfromscratch.org/lfs/). Compiled and configured a complete Linux system from C/C++ source code and the command line.
 
-Maintained web site and redesigned UI using Bootstrap and AngularJS.
+**chaimleib.com personal website and JS audio player (zichronos)**, 2014 onward. TLS certificate/HTTPS. Static pages and media generated using Ruby, Bash and SCSS, audio player using JS+jQuery, images with Inkscape.
 
-### **Web Engineer and Graphic Designer, Chabad of the East Bay** (2013-2014)
+**github.com/chaimleib/intervaltree**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is currently the industry reference implementation of interval trees in Python, cited in numerous academic research papers for gene research and computer vision applications, etc.
 
-Programmed with Google Spreadsheets API, developed CiviCRM web site, and created vector logo in Inkscape and Illustrator.
+**USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer. Written in C for Atmega32u4 microcontroller (Teensy 1.0).
+
+**2-axis gimballed spotlight with IR camera target tracker**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. Python, finite state machine program architecture, Raspberry Pi, Bluetooth, Nintendo Wii controller, RS485 serial servos.
+
+**Handwritten digit recognizer**, Coursera.com Machine Learning, August 2012 with Prof. Andrew Ng. Written in Octave, an open-source clone of Matlab.
+
+**Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
 
 ## Education
 ### **University of California, Berkeley – College of Engineering** (2008-2014)
