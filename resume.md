@@ -21,7 +21,7 @@
 **Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Is migrating personal devices from Apple to Linux.
 
 ## Work experience
-### **Web Software Engineer and Microservices Architect, Evernote** (June 2016 - February 2023)
+### **Web Software Engineer and Microservices Architect, Evernote** (Redwood City, CA until October 2020; thereafter Remote in Phoenix, AZ; June 2016 - February 2023)
 
 **Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** My system design has been in production for six years so far.
 
@@ -42,19 +42,19 @@
 
 **Communication**: Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty.
 
-### **Software Engineer, Coupa Software** (May 2015 – January 2016)
+### **Software Engineer, Coupa Software** (San Mateo, CA; May 2015 – January 2016)
 
 Ruby on Rails, Bootstrap, Turnip unit tests, Jenkins, and bash. Optimized RSpec test harness to work 30% faster; developed in-browser integration tests and unit tests; cooperated via AGILE with hundreds of developers using GitHub and Atlassian JIRA.
 
-### **Software Engineer Intern, Rustici Software** (June 2014 - August 2014)
+### **Software Engineer Intern, Rustici Software** (Nashville, TN; June 2014 - August 2014)
 
 Created Python client library for TinCan API (xAPI 2.0) and created a JSON object verifier and recognizer using JSON Schema and Node.js/JavaScript. Worked on five-person team using GitHub.
 
-### **Industrial Controls Engineer, Bridgestone** (May 2012 - December 2012)
+### **Industrial Controls Engineer, Bridgestone** (Nashville, TN; May 2012 - December 2012)
 
 Designed safety systems and machine control systems with AutoCAD Electrical, CoDeSys, and RSLogix. Coded PLCs in structured text (IEC 61131-3) and ladder logic, and created AutoCAD plugins with C#, Visual Basic, and LISP.
 
-### **Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (June 2010 - August 2010)
+### **Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (Oak Ridge, TN; June 2010 - August 2010)
 
 Modernized a browser-based experiment log system. Used PHP, JavaScript, MySQL, TinyMCE, ssh, vim, Red Hat Linux.
 
@@ -78,6 +78,6 @@ Modernized a browser-based experiment log system. Used PHP, JavaScript, MySQL, T
 **Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
 
 ## Education
-### **University of California, Berkeley – College of Engineering** (2008-2014)
+### **University of California, Berkeley – College of Engineering** (August 2008 - March 2014)
 
 Studied Electrical Engineering and Computer Science. Assignments were completed in Python, C, C++, Java, JavaScript, Matlab, Scheme, and Latex. Courses covered recursive data structures and algorithms, AI, computer graphics, compilers, embedded systems, and DSP. Nearly all technical courses required ssh to bash shell on Solaris or CentOS, GNU Makefile, and some sort of VCS, usually git.
