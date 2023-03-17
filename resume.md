@@ -23,10 +23,10 @@
 ## Work experience
 ### **Web Software Engineer and Microservices Architect, Evernote** (June 2016 - February 2023)
 
-**Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** over 6 months: It has lasted for six years and is still going strong (four previous attempts by other devs lived on average 18 months each).
+**Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** My system design has been in production for six years so far.
 
-* Designed and implemented HTML template system and compatibility checkers to ensure that all JSON data remains valid even as templates change.
-* Codeless (and engineer-less) content updates via Crownpeak CMS (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
+* Recursive HTML/JSON template system, and compatibility checkers to ensure that all JSON data remains valid even as templates change.
+* CMS integration allows non-programmers to assemble template components into pages via Crownpeak (C#, command-line SSH/SFTP, Google Cloud Compute+Storage).
 * New tooling for deploy, preview, unit test, and code quality (Go, yarn, webpack, nvm/fnm, bash/zsh, rsync, SASS, prettier, eslint, goimports, golint-ci, shellcheck).
 * Created command-line search tools in Go and bash shell script to list assets related by (e.g.) shared JS sources, HTML template files, URLs, etc. It answers frequent questions like "Which pages use this HTML component?" or reverse query "Which components does this page use?"; or "Which translation languages are available for this URL?" etc. (bash, awk, grep/ripgrep, sed, jq/yq, xargs, etc.)
 
