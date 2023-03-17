@@ -1,6 +1,8 @@
 <div id="bsd" dir="rtl">בס״ד</div>
+
 #### Phoenix, AZ 85016
-#### github.com/chaimleib — chaim.leib.halbert@gmail.com
+
+#### github.com/chaimleib — linkedin.com/in/chaim-leib-halbert-78686089 — chaim.leib.halbert@gmail.com
 
 ## Goals
 
@@ -21,6 +23,7 @@
 **Other**: Has studied and implemented algorithms for music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, parsers, compilers, interpreters, and operating systems. Is migrating personal devices from Apple to Linux.
 
 ## Work experience
+
 ### **Web Software Engineer and Microservices Architect, Evernote** (Redwood City, CA until October 2020; thereafter Remote in Phoenix, AZ; June 2016 - February 2023)
 
 **Re-architected and migrated evernote.com from PHP with AWS to Go with Google App Engine** My system design has been in production for six years so far.
@@ -59,6 +62,7 @@ Designed safety systems and machine control systems with AutoCAD Electrical, CoD
 Modernized a browser-based experiment log system. Used PHP, JavaScript, MySQL, TinyMCE, ssh, vim, Red Hat Linux.
 
 ## Notable personal and school projects
+
 **github.com/chaimleib/intervaltree**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is currently the industry reference implementation of interval trees in Python, cited in numerous academic research papers for gene research and computer vision applications, etc.
 
 **github.com/chaimleib/dotfiles**, 2014 onward. Bash and ZSH compatible environment setup, automatically install desired tools on apt/apk/pacman/brew, lssys detects OS/CPU/RAM, vim and neovim configuration for Language Server Protocol, etc.
@@ -78,6 +82,7 @@ Modernized a browser-based experiment log system. Used PHP, JavaScript, MySQL, T
 **Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. Written in Python 2. Also created a Vim syntax highlighting file for the new language.
 
 ## Education
+
 ### **University of California, Berkeley – College of Engineering** (August 2008 - March 2014)
 
 Studied Electrical Engineering and Computer Science. Assignments were completed in Python, C, C++, Java, JavaScript, Matlab, Scheme, and Latex. Courses covered recursive data structures and algorithms, AI, computer graphics, compilers, embedded systems, and DSP. Nearly all technical courses required ssh to bash shell on Solaris or CentOS, GNU Makefile, and some sort of VCS, usually git.
