@@ -8,6 +8,15 @@
   }
 }
 
+@media only screen {
+  .content {
+    position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #bsd {
   position: absolute;
   display: inline-block;
