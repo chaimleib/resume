@@ -10,14 +10,40 @@ links for humans with browsers.
 import html
 import json
 import sys
+from os import path
 from xml.dom import minidom
 from collections import namedtuple, deque
+
+def embed_css(doc, dirname):
+    headList = doc.getElementsByTagName('head')
+    if not headList:
+        head = doc.createElement('head')
+        root = doc.documentElement
+        root.insertBefore(head, root.firstChild)
+        headList = [head]
+    head = headList[0]
+    for link in head.getElementsByTagName('link'):
+        if link.getAttribute('rel') != 'stylesheet':
+            continue
+        href = link.getAttribute('href')
+        if not href:
+            continue
+        with open(href, 'r') as file:
+            css = file.read()
+            doc = minidom.parseString("\n".join([
+                "<style>",
+                "{}",
+                "</style>"
+            ]).format(css))
+            style = doc.documentElement
+            head.replaceChild(style, link)
 
 def nest_div(doc):
     bodyList = doc.getElementsByTagName('body')
     if not bodyList:
-        print('error: no body\n')
-        return False
+        body = doc.createElement('body')
+        doc.documentElement.appendChild(body)
+        bodyList = [body]
     body = bodyList[0]
     children = [*body.childNodes]
     div = doc.createElement('div')
@@ -26,7 +52,6 @@ def nest_div(doc):
     for child in children:
         body.removeChild(child)
         div.appendChild(child)
-    return True
 
 _stack_node = namedtuple("StackNode", "node, addr")
 def StackNode(node):
@@ -186,7 +211,7 @@ if __name__ == "__main__":
         print("\n".join([
             'usage: {} inputFile [ -o outputFile ]',
             '',
-            'Obfuscates HTML to hide private information and turn them into links in the browser.',
+            'Obfuscates HTML to hide private information from bots while turning them into links in the browser.',
             '',
             'If outputFile is -, output is printed to stdout. This is the default.',
             '',
@@ -222,9 +247,8 @@ if __name__ == "__main__":
         exit(1)
 
     doc = minidom.parse(inputFile)
-    if not nest_div(doc):
-        print('error: inside nest_div(doc)\n')
-        exit(1)
+    nest_div(doc)
+    embed_css(doc, path.dirname(inputFile))
     link_mailto(doc)
     link_tel(doc)
     newDoc = doc.documentElement.toxml()
