@@ -35,7 +35,7 @@
 
 **Browser-based note editor and checkout flow**: _Typescript, React, Java_
 
-**Google Cloud Platform**: load distribution, scaling, hosting, URL routing and event routing. _App Engine, Cloud Functions, Cloud Storage, Pub/Sub, StackDriver, BigQuery, KMS secrets management, HAProxy_
+**Google Cloud Platform**: load balancing, scaling, hosting, URL routing and event routing. _App Engine, Cloud Functions, Cloud Storage, Pub/Sub, StackDriver, BigQuery, KMS secrets management, HAProxy_
 
 **Communication**: _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
 
@@ -49,7 +49,7 @@ Released open-source Python client library for TinCan API (xAPI 2.0) and created
 
 ### **Industrial Controls Engineer, Bridgestone** (May 2012 - December 2012; Nashville, TN)
 
-Designed fail-safes, safety and machine control systems. _Embedded systems, RTOS, electrical schematics, AutoCAD Electrical (incl. plugin development in C# .Net, Visual Basic .Net, and AutoLISP), CoDeSys, RSLogix, PLC, structured text a.k.a. IEC 61131-3, ladder logic_
+Designed fail-safes, safety and control systems for factory machinery. _Embedded systems, RTOS, electrical schematics, AutoCAD Electrical (incl. plugin development in C# .Net, Visual Basic .Net, and AutoLISP), CoDeSys, RSLogix, PLC, structured text a.k.a. IEC 61131-3, ladder logic_
 
 ### **Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (June 2010 - August 2010; Oak Ridge, TN)
 
