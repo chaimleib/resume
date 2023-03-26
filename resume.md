@@ -41,7 +41,7 @@
 
 ### **Software Engineer, Coupa Software** (May 2015 – January 2016; San Mateo, CA)
 
- Optimized RSpec test harness to work 30% faster; in-browser integration tests and unit tests; cooperated via Agile with hundreds of developers using GitHub and Atlassian JIRA. _Ruby on Rails, RSpec, MySQL and migrations, Turnip unit tests, Jenkins, bash, JIRA_
+ Optimized RSpec test harness to work 30% faster; in-browser integration tests and unit tests; cooperated via Agile with hundreds of developers using GitHub and Atlassian JIRA. _Ruby on Rails, RSpec, MySQL and migrations, Turnip unit tests, BDD, Cucumber, JavaScript, Jenkins, bash, Jira_
 
 ### **Software Engineer Intern, Rustici Software** (June 2014 - August 2014; Nashville, TN)
 
