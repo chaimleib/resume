@@ -29,7 +29,7 @@
 
 ### **Cloud Software Engineer, Evernote** (June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)
 
-**Re-architected and migrated [evernote.com](https://evernote.com) from PHP with AWS to Go with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer frequent questions, like "What URLs do we serve?" "What assets are unused?" _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
+**Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
 
 **Content Delivery Network (CDN)**: For images in Iterable emails. _Google Cloud Storage_
 
@@ -67,7 +67,7 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 **Completed Linux From Scratch** twice, in 2006 and 2021 ([linuxfromscratch.org/lfs](https://www.linuxfromscratch.org/lfs/)). Compiled and configured a complete OS from C/C++ source code. _Linux, OS, boot sequence, bash, Makefile, X11_
 
-**[chaimleib.com](https://chaimleib.com) personal website and jQuery audio player (zichronos)**, 2014 onward. _TLS/HTTPS, Ruby, JavaScript, jQuery, React, Jekyll, GitHub Pages, bash, SCSS_
+**[chaimleib.com](https://chaimleib.com) personal website and jQuery audio player (zichronos)**, 2014 onward. _TLS/HTTPS, Ruby, JavaScript, jQuery, React, Jekyll, GitHub Pages, GitHub Actions, bash, SCSS_
 
 **USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer using Atmega32u4 (Teensy 1.0). _Embedded systems, C, Atmel microcontrollers, USB protocol, Linux device development_
 
