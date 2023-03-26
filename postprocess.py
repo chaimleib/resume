@@ -10,11 +10,12 @@ links for humans with browsers.
 import html
 import json
 import sys
+from datetime import datetime
 from os import path
 from xml.dom import minidom
 from collections import namedtuple, deque
 
-def embed_css(doc, dirname):
+def get_head(doc):
     headList = doc.getElementsByTagName('head')
     if not headList:
         head = doc.createElement('head')
@@ -22,6 +23,29 @@ def embed_css(doc, dirname):
         root.insertBefore(head, root.firstChild)
         headList = [head]
     head = headList[0]
+    return head
+
+def mark_revision(doc):
+    rev_meta = doc.createElement('meta')
+    now = datetime.now().astimezone()
+    rev = now.strftime('Chaim Halbert, %Y-%m-%d %H:%M%z')
+    rev_meta.setAttribute('name', 'revised')
+    rev_meta.setAttribute('content', rev)
+
+    # put a newline and indent before my revision meta
+    nl = doc.createTextNode('\n  ')
+
+    head = get_head(doc)
+    lastMeta = None
+    for meta in head.getElementsByTagName('meta'):
+        lastMeta = meta
+    before_target = lastMeta.nextSibling if lastMeta else None
+    if lastMeta:
+        head.insertBefore(nl, before_target)
+    head.insertBefore(rev_meta, before_target)
+
+def embed_css(doc, dirname):
+    head = get_head(doc)
     for link in head.getElementsByTagName('link'):
         if link.getAttribute('rel') != 'stylesheet':
             continue
@@ -30,11 +54,17 @@ def embed_css(doc, dirname):
             continue
         with open(href, 'r') as file:
             css = file.read()
-            doc = minidom.parseString("\n".join([
-                "<style>",
-                "{}",
-                "</style>"
-            ]).format(css))
+            # I could just put css between the style tags. But the indents
+            # won't be nice.
+            to_parse = ("\n".join([
+                "<style>", # target node to replace already indented 2
+                "    {}",
+                "  </style>"
+                ])
+                    .format('\n    '.join(css.split('\n'))) # indent css 4
+                    .replace('    \n', '\n') # delete spaces from empty lines
+            )
+            doc = minidom.parseString(to_parse)
             style = doc.documentElement
             head.replaceChild(style, link)
 
@@ -52,6 +82,12 @@ def nest_div(doc):
     for child in children:
         body.removeChild(child)
         div.appendChild(child)
+
+    # add newlines around the new div
+    nl1 = doc.createTextNode('\n')
+    body.insertBefore(nl1, div)
+    nl2 = doc.createTextNode('\n')
+    body.appendChild(nl2)
 
 _stack_node = namedtuple("StackNode", "node, addr")
 def StackNode(node):
@@ -247,13 +283,14 @@ if __name__ == "__main__":
         exit(1)
 
     doc = minidom.parse(inputFile)
+    mark_revision(doc)
     nest_div(doc)
     embed_css(doc, path.dirname(inputFile))
     link_mailto(doc)
     link_tel(doc)
-    newDoc = doc.documentElement.toxml()
+    newDoc = doc.documentElement.toxml() + '\n'
     if outputFile == '-':
-        print(newDoc + '\n')
+        print(newDoc)
     else:
         with open(outputFile, 'w') as file:
             file.write(newDoc)
