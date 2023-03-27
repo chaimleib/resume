@@ -23,7 +23,7 @@
 
 **Continuous Integration Testing**: _Jenkins, TravisCI, CircleCI_
 
-**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown and rendered with a Makefile.
+**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown and rendered with a Makefile. 3D printing, using self-designed models in Blender and FreeCAD.
 
 ## Work experience
 
