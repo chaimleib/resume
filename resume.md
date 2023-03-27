@@ -57,7 +57,7 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 ## Notable personal and school projects
 
-**[github.com/chaimleib/intervaltree](https://github.com/chaimleib/intervaltree)**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is the industry reference implementation of interval trees in Python, cited in numerous academic research papers for genome research, computer vision applications, etc. _Python, data structures, open source, GitHub_
+**[github.com/chaimleib/intervaltree](https://github.com/chaimleib/intervaltree)**, 2014 onward. Modify and query intervals in logarithmic time in pure Python 2/3. This is the industry reference implementation of interval trees in Python, cited in numerous academic research papers for genome research, computer vision applications, etc. _Python, data structures, open source, CI, GitHub, TravisCI, GitHub Actions, Docker_
 
 **[github.com/chaimleib/dotfiles](https://github.com/chaimleib/dotfiles)**, 2014 onward. Portable, multi-OS environment setup scripts and automatic installers. _bash, dash, zsh, busybox, Linux (Ubuntu, Debian, Mint, Arch, Alpine, Red Hat), POSIX, Solaris, CentOS, macOS, MinGW, vim/neovim script, Language Server Protocol_
 
