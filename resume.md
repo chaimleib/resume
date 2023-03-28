@@ -31,13 +31,13 @@
 
 **Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
 
-**Content Delivery Network (CDN)**: For images in Iterable emails. _Google Cloud Storage_
+**Content Delivery Network (CDN)**: Host images for Iterable emails and load-balance them across the globe. _Google Cloud Storage_
 
-**Browser-based note editor and checkout flow**: _Typescript, React, Java_
+**Browser-based note editor and checkout flow**: Improved the online flagship app. _Typescript, Webpack, yarn, React, Redux, Java, Maven, bash_
 
 **Google Cloud Platform**: load balancing, scaling, hosting, URL routing and event routing. _App Engine, Cloud Functions, Cloud Storage, Pub/Sub, StackDriver, BigQuery, KMS secrets management, HAProxy_
 
-**Communication**: _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
+**Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
 
 ### **Software Engineer, Coupa Software** (May 2015 – January 2016; San Mateo, CA)
 
@@ -69,6 +69,10 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 **[chaimleib.com](https://chaimleib.com) personal website and jQuery audio player (zichronos)**, 2014 onward. _TLS/HTTPS, Ruby, JavaScript, jQuery, React, Jekyll, GitHub Pages, GitHub Actions, bash, SCSS_
 
+**3D printing**: Designed and printed replacement parts for appliances around the house, including cable guides, freezer door parts, and iPad cases.
+
+**Custom mechanical keyboards**: Built the ErgoDox split keyboard kit from components, added LED backlighting and customized the firmware. Also, built a retro joystick controller that works over USB using Atmega32u4 microcontroller and custom-coded firmware. _C, Atmel microcrontrollers, GNU Make, GCC, cross compilers, firmware development, embedded systems, serial communication, USB protocol_
+
 **USB Nintendo 64 Cartridge reader**, 2014. Allows backups of N64 games to the computer using Atmega32u4 (Teensy 1.0). _Embedded systems, C, Atmel microcontrollers, USB protocol, Linux device development_
 
 **2-axis gimballed spotlight with IR camera target tracker**, UC Berkeley EECS 149 Intro to Embedded Systems, 2014. _Embedded systems, C, Python, FSM program architecture, Raspberry Pi, Bluetooth, Nintendo Wii controller, RS485 serial servos_
@@ -77,8 +81,14 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 **Lua-like interpreter, parser generator and bytecode compiler**, UC Berkeley CS 164 Compilers, 2010. _Python 2, compilers, parsers, interpreters, vimscript, vim syntax highlighting_
 
+**First personal web site on Geocities.com**, published at age 11 in middle school.
+
 ## Education
 
 ### **University of California, Berkeley – B.S. program in Electrical Engineering and Computer Science** (August 2008 - March 2014)
 
-Projects were completed in _Python, C, C++, Java, JavaScript, GNU Makefile, Matlab, Scheme, Verilog, and Latex._ Courses covered _physics, calculus, matrix algebra, recursive data structures and algorithms, AI, computer graphics, compilers, embedded systems, DSP, FPGAs, analog and digital circuits._
+Projects were completed in _Python, C, C++, Java, JavaScript, GNU Makefile, Matlab, Scheme, Verilog, and Latex._ Courses covered _physics, calculus, matrix algebra, recursive data structures and algorithms, AI, computer graphics, compilers, embedded systems, DSP, FPGAs, analog and digital circuits, SPICE circuit simulation._
+
+### **Hume-Fogg Academic Magnet H.S., Nashville, Tennessee - National Honor Society** (August 2004 - May 2008)
+
+Honors Algebra, Honors Trigonometry and Pre-Calculus, AP Calculus BC, Honors Multivariable Calculus, AP Physics BC. Audited CS college courses at Vanderbilt University: Computer Networking and Digital Electronics. Four years German including AP German and first place at interscholastic competitions. Volunteered with school IT engineer and experimented with Linux from scrounged computer parts. Designed and built voltage-shifting driver circuits for science fair robotics projects, controlled by Lego RCX microcontroller. Mock company website for summer Governor's School Program. _digital electronics, electronic schematics, advanced mathematics, C, C++, Visual Basic .Net, MySQL, RDBMS, MySQL, UML, HTML, JavaScript, CSS, Mac OS X GUI programming, network administration, Ubuntu Linux, bash shell, TI BASIC, microcontrollers, embedded systems, robotics, German_
