@@ -29,7 +29,7 @@
 
 ### **Cloud Software Engineer, Evernote** (June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)
 
-**Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
+**Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go and C# with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
 
 **Content Delivery Network (CDN)**: Host images for Iterable emails and load-balance them across the globe. _Google Cloud Storage_
 
