@@ -78,3 +78,87 @@ As of 2023:
   and maintained several microservices as part of that project, which handled
   translations, the CMS, content updates, IP address to geographical location
   conversion, and automatic updates for app download links.
+
+* Testing - I created very extensive tests for Evernote to ensure that there is
+  no service disruption for evernote.com. I codified the pre-deploy checklist
+  and toolchain, including a check on every page to make sure the templates are
+  completely filled  from our actual JSON data, and nothing causes a
+  server-side error. For each merge request, every module in the server had
+  unit tests, mostly written by me on the evernote.com project, to check all
+  the link transformation functions, caching data structures, glob expression
+  parsers, and all the other component parts. I made an effort to keep
+  functions small and simple for testing purposes so that mocking was rarely
+  required, but when it was required, I took advantage of interfaces and zero
+  values to ensure good code coverage and separation of concerns. Java code was
+  of course heavily tested as well, both end-to-end using Selenium, and with
+  unit tests and mocks. All code was run through the appropriate linter for Go,
+  C#, Java, JavaScript, TypeScript, bash shell, and SCSS. We were using Jenkins
+  to run these tests, which the Engineering Services team taught me to
+  configure. My tests were so thorough that even though I always gave the QA
+  team a list of pages changed, in the last three years it became very rare
+  that they found something that my tests didn't already tell us about.
+
+  At Coupa Software, we were also very heavy on Test-Driven Development in
+  Javascript and Ruby, and we used Cucumber and Turnip for the purpose. I was
+  even doing TDD at UC Berkeley, although typically the professors provided the
+  tests. For grading of course they  took our assignments and ran them against
+  their own, more extensive tests.
+
+  In my personal projects, I have used Travis CI, Circle CI, and GitHub Actions
+  together with Dockerfiles to run continuous integration tests. 
+
+* Logging - Logs are supposed to be aids to debugging. Extra noise is a
+  distraction, so I strive to minimize that, but when there is a problem, I
+  make an effort to provide stack traces with files, function signatures,
+  important argument values and line numbers. This makes debugging much faster
+  and more pleasant, and I created an errors package in Go for the purpose.
+  When running locally, an error would print an indented chain of errors that
+  told me exactly why the program failed; when in production, each error would
+  be emitted in JSON format together with a trace ID, so that related log lines
+  could be linked with the request that triggered the error. This was critical
+  because the server was multithreaded and log lines could be interleaved with
+  entries from concurrent request handlers in flight. Every month, we would
+  archive logs in BigQuery, and clear out old logs when our budget no longer
+  allowed us to keep them in storage. Most of our questions could be answered
+  from the last two weeks of logs, and I would occasionally filter and plot
+  histograms of log entries using shell scripts and GNUplot.
+
+* Monitoring - At Evernote, I configured and maintained many monitoring
+  systems. I used Pingdom with synthetic requests to test for uptime, Datadog
+  to graph and monitor 400s, 500s and response times, and PagerDuty to draw our
+  attention whenever the server appeared down. This was rare, and usually
+  caused by a service provider being down, like AWS, Cloudflare, or Google
+  Cloud. Once, however, there was an issue with Google PubSub exceeding the
+  quota of subscriptions to a channel, causing 500s as the server failed to
+  boot. I resolved the immediate issue by deleting unused subscriptions by the
+  hundreds, and writing a script to do this cleanup automatically on a regular
+  basis. Eventually I removed the dependency on PubSub and used polling
+  instead.
+
+* AI/Machine Learning - I have classroom experience with Prof. Andrew Ng
+  writing machine learning models. I view AI/ML as a powerful, yet inexact tool
+  that needs to be monitored. Irreversible action should not be taken on the
+  basis of AI alone, and action should certainly not be taken automatically. I
+  prefer that AI report to a human first, at least during a trial period, and
+  that a developer remains in control. The dev may be able to make a code
+  change to avoid the questionable situation altogether while simultaneously
+  improving performance. That is usually preferable to having the AI
+  continuously bleeding the budget, consuming compute cycles, and reacting to
+  all the noise.
+
+  For those situations that AI/ML is required, there still remains an element
+  of unpredictableness. The initial state of a Machine Learning model is a
+  random seed, and the algorithms use inexact floating-point numbers, derived
+  in part from that random seed. As such, for complex models, nobody completely
+  understands why a model makes each and every one of its decisions, and its
+  decisions are somewhat unpredictable and unrepeatable. Only code that humans
+  can verify can provide a guarantee of repeatabily. Only with source code can
+  you truly know that with the same input, you will get the same result. With
+  ML, one of the inputs is randomness.
+
+  I do see a place for ML, however, especially in situations like reading
+  addresses at the US Post Office. Even a human sorter makes mistakes, and if
+  AI consistently makes mistakes at a smaller rate over an extended period of
+  time, AI is worthwhile. This is especially so if the AI can send uncertain
+  inputs for human evaluation, which the USPS ML model does.
+
