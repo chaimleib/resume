@@ -37,7 +37,7 @@
 
 **Google Cloud Platform**: load balancing, scaling, hosting, URL routing and event routing. _App Engine, Cloud Functions, Cloud Storage, Pub/Sub, StackDriver, BigQuery, KMS secrets management, HAProxy_
 
-**Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
+**Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management. Convenes cross-functional teams for root-cause analysis of service interruptions. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
 
 ### **Software Engineer, Coupa Software** (May 2015 – January 2016; San Mateo, CA)
 
