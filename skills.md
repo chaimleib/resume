@@ -2,7 +2,7 @@ As of 2023:
 
 ## Highlighted Skills
 
-### Google Cloud
+### **Google Cloud**
 I have been iterating on evernote.com, a GCP project, for the
 past 6-1/2 years. Originally, the site was hosted on AWS, but within my first
 year at Evernote I led the re-architecting of its functions in Google Cloud.
@@ -34,7 +34,7 @@ I managed secrets using KMS, propagated events using PubSub, and
 customized Jenkins instances hosted within Kubernetes configured with
 Dockerfiles.
 
-### Python
+### **Python**
 I've been developing in Python on and off for 14 years. I fixed a
 bug in the Guake Terminal for Linux while I was in high school, before I
 realized that a later release actually already fixed the bug in similar way
@@ -55,7 +55,7 @@ to postprocess the HTML emitted from a Markdown-to-HTML converter, in order
 to obfuscate my email and phone number from web scrapers for scam
 communications.
 
-### API design
+### **API design**
 My first introduction to API design was at UC Berkeley. Over
 several courses, I was trained in the use of scopes to hide implementation
 details and secrets, how access levels for fields and methods work in
@@ -74,7 +74,7 @@ stressed separation of concerns, single sources of truth, simplicity for
 other developers, and clear organization. All of these systems I designed and
 built have lasted for more than 6 years and are still in active use.
 
-### Java
+### **Java**
 I first learned Java for my Data Structures course at UC Berkeley,
 and since then have encountered it at a few different jobs. My impression of
 Java as a student and Java as working developer were quite different. In
@@ -84,7 +84,21 @@ to facilitate unit testing. I encountered some industrial Java at Rustici
 Software, but more so at Evernote, where the backend monolith was mostly Java
 using Spring, JUnit tests, and Mockito.
 
-### Linux
+### **Go**
+I first started using Go when it was still a new language in 2016. At the time,
+it still did not have a package manager, but it had a robust standard library
+that was sufficient for making production-ready web servers. Throughout my time
+at Evernote I programmed in Go almost every day for 7 years, migrating to the
+new go.mod packaging system from govendor, and deploying evernote.com based on
+that.
+
+I enjoy Go for its relatively minimal syntax, its calling convention of
+returning errors as a first-class type and the ability to enforce error
+checking at the compiler level, its built-in map data type (like JavaScript's
+object), and the innovative treatment of channels and goroutines as
+multithreading primitives.
+
+### **Linux**
 I have over 20 years of experience with various flavors of Linux. My
 earliest was with dual-booting Puppy Linux with Mac OS 8. Throughout high
 school, I gathered discarded computer parts, installed Ubuntu on the
@@ -105,7 +119,7 @@ boot. When writing web servers to run in Google Cloud Platform, I was
 constantly aware that the OS I was running on was some type of Linux, and I
 fully utilized and extended my skills in the use of Linux command-line tools.
 
-### Fullstack
+### **Fullstack**
 In addition to my backend experience detailed above, I have been
 developing frontend for websites since I was 11 years old, over 20 years ago.
 I got introduced to CSS soon after it was introduced when I was still in
@@ -124,7 +138,7 @@ project, which handled translations, the CMS, content updates, IP address to
 geographical location conversion, and automatic updates for app download
 links.
 
-### Testing
+### **Testing**
 I created very extensive tests for Evernote to ensure that there is
 no service disruption for evernote.com. I codified the pre-deploy checklist
 and toolchain, including an automatic check on every page to make sure the
@@ -162,7 +176,7 @@ their own, more extensive tests.
 In my personal projects, I have used Travis CI, Circle CI, and GitHub Actions
 together with Dockerfiles to run continuous integration tests.
 
-### Logging
+### **Logging**
 Logs are supposed to be aids to debugging. Extra noise is a
 distraction, so I strive to minimize that, but when there is a problem, I
 make an effort to provide stack traces with files, function signatures,
@@ -186,7 +200,7 @@ questions could be answered from the last two weeks of logs, and I would
 occasionally filter and plot histograms of log entries using shell scripts
 and GNUplot.
 
-### Monitoring
+### **Monitoring**
 At Evernote, I configured and maintained many monitoring
 systems. I used Pingdom with synthetic requests to test for uptime, Datadog
 to graph and monitor 400s, 500s and response times, and PagerDuty to draw our
@@ -199,7 +213,7 @@ hundreds, and writing a script to do this cleanup automatically on a regular
 basis. Eventually I removed the dependency on PubSub and used polling
 instead.
 
-### AI/Machine Learning
+### **AI/Machine Learning**
 I have classroom experience with Prof. Andrew Ng
 writing machine learning models. I view AI/ML as a powerful, yet inexact tool
 that needs to be monitored. Irreversible action should not be taken on the
@@ -227,7 +241,7 @@ AI consistently makes mistakes at a smaller rate over an extended period of
 time, AI is worthwhile. This is especially so if the AI can send anything it
 is uncertain about for human evaluation, which the USPS ML model does.
 
-### Geospatial
+### **Geospatial**
 My most recent project in this field used the MaxMind GeoIP database to convert
 IP addresses to labeled place names and latitude-longitude coordinates. I set
 up a microservice to automatically keep this database updated every week and
