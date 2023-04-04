@@ -27,7 +27,7 @@
 
 ## Work experience
 
-### **Cloud Software Engineer, Evernote** (June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)
+### Cloud Software Engineer, Evernote <small>(June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)</small>
 
 **Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go and C# with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
 
@@ -39,19 +39,19 @@
 
 **Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management. Convenes cross-functional teams for root-cause analysis of service interruptions. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
 
-### **Software Engineer, Coupa Software** (May 2015 – January 2016; San Mateo, CA)
+### Software Engineer, Coupa Software <small>(May 2015 – January 2016; San Mateo, CA)</small>
 
  Optimized RSpec test harness to work 30% faster; in-browser integration tests and unit tests; cooperated via Agile with hundreds of developers using GitHub and Atlassian JIRA. _Ruby on Rails, RSpec, MySQL and migrations, Turnip unit tests, BDD, Cucumber, JavaScript, Jenkins, bash, Jira_
 
-### **Software Engineer Intern, Rustici Software** (June 2014 - August 2014; Nashville, TN)
+### Software Engineer Intern, Rustici Software <small>(June 2014 - August 2014; Nashville, TN)</small>
 
 Released open-source Python client library for TinCan API (xAPI 2.0) and created a JSON object verifier and recognizer using JSON Schema and Node.js/JavaScript.
 
-### **Industrial Controls Engineer, Bridgestone** (May 2012 - December 2012; Nashville, TN)
+### Industrial Controls Engineer, Bridgestone <small>(May 2012 - December 2012; Nashville, TN)</small>
 
 Designed fail-safes, safety and control systems for factory machinery. _Embedded systems, RTOS, electrical schematics, AutoCAD Electrical (incl. plugin development in C# .Net, Visual Basic .Net, and AutoLISP), CoDeSys, RSLogix, PLC, structured text a.k.a. IEC 61131-3, ladder logic_
 
-### **Computer Programmer Intern, Oak Ridge National Laboratory Physics Division** (June 2010 - August 2010; Oak Ridge, TN)
+### Computer Programmer Intern, Oak Ridge National Laboratory Physics Division <small>(June 2010 - August 2010; Oak Ridge, TN)</small>
 
 Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyMCE, ssh, vim, Red Hat Linux_
 
@@ -85,10 +85,10 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 ## Education
 
-### **University of California, Berkeley – B.S. program in Electrical Engineering and Computer Science** (August 2008 - March 2014)
+### University of California, Berkeley – B.S. program in Electrical Engineering and Computer Science <small>(August 2008 - March 2014)</small>
 
 Projects were completed in _Python, C, C++, Java, JavaScript, GNU Makefile, Matlab, Scheme, Verilog, and Latex._ Courses covered _physics, calculus, matrix algebra, recursive data structures and algorithms, AI, computer graphics, compilers, embedded systems, DSP, FPGAs, analog and digital circuits, SPICE circuit simulation._
 
-### **Hume-Fogg Academic Magnet H.S., Nashville, Tennessee - National Honor Society** (August 2004 - May 2008)
+### Hume-Fogg Academic Magnet H.S., Nashville, Tennessee - National Honor Society <small>(August 2004 - May 2008)</small>
 
 Honors Algebra, Honors Trigonometry and Pre-Calculus, AP Calculus BC, Honors Multivariable Calculus, AP Physics BC. Audited CS college courses at Vanderbilt University: Computer Networking and Digital Electronics. Four years German including AP German and first place at interscholastic competitions. Volunteered with school IT engineer and experimented with Linux from scrounged computer parts. Designed and built voltage-shifting driver circuits for science fair robotics projects, controlled by Lego RCX microcontroller. Mock company website for summer Governor's School Program. _digital electronics, electronic schematics, advanced mathematics, C, C++, Visual Basic .Net, MySQL, RDBMS, MySQL, UML, HTML, JavaScript, CSS, Mac OS X GUI programming, network administration, Ubuntu Linux, bash shell, TI BASIC, microcontrollers, embedded systems, robotics, German_
