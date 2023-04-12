@@ -11,7 +11,7 @@
 
 ## Skills
 
-**Coding**: More than 20 years of experience; first website at age 11. Recent work experience in _Go, C#, JavaScript/Node.js, TypeScript, Java, Python, MySQL, bash, zsh, ash and dash;_ less recent work in _Perl, PHP, Ruby, Visual Basic .Net, ladder logic, PLC structured text, LISP._ Education and personal project experience in _most of these and also C, C++, Objective-C, Swift, awk, Scheme, Matlab/Octave, Verilog._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages.
+**Coding**: More than 20 years of experience; first website at age 11. Recent work experience in _Go, C# .Net, JavaScript/Node.js, TypeScript, Java, Python, MySQL, bash, zsh, ash and dash;_ less recent work in _Perl, PHP, Ruby, Visual Basic .Net, ladder logic, PLC structured text, LISP._ Education and personal project experience in _most of these and also C, C++, Objective-C, Swift, awk, Scheme, Matlab/Octave, Verilog._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages.
 
 **Web technologies**: Full stack web and cloud development using _GCP and AWS; MySQL, NoSQL, ElasticSearch, Redis, CouchDB, React, Angular, jQuery, Webpack, npm/yarn, Docker, Kubernetes, SRE._
 
@@ -23,7 +23,9 @@
 
 **Continuous Integration Testing**: _Jenkins, TravisCI, CircleCI, GitHub Actions_
 
-**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown and rendered with a Makefile. 3D printing, using self-designed models in Blender and FreeCAD.
+**Data Processing and Visualization**: Log analysis and histograms, multi-sensor fusion, timeseries visualization and regression curves, principal component analysis, neural networks. _Google StackDriver, Google BigQuery, Splunk, awk, Gnuplot, Python, Matlab, Octave, LabView_
+
+**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown, and rendered using a Makefile and a Python DOM manipulation script. 3D printing, using self-designed models in Blender and FreeCAD.
 
 ## Work experience
 
