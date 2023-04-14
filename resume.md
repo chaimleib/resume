@@ -6,24 +6,24 @@
 
 ## Goals
 
-* Backend, full-stack, cloud, or embedded systems engineering
+* Backend, full-stack, cloud engineering
 * Protect privacy, empower the customer
 
 ## Skills
 
-**Coding**: More than 20 years of experience; first website at age 11. Recent work experience in _Go, C# .Net, JavaScript/Node.js, TypeScript, Java, Python, MySQL, bash, zsh, ash and dash;_ less recent work in _Perl, PHP, Ruby, Visual Basic .Net, ladder logic, PLC structured text, LISP._ Education and personal project experience in _most of these and also C, C++, Objective-C, Swift, awk, Scheme, Matlab/Octave, Verilog._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages.
+**Coding**: More than 20 years of experience. Recent experience in _Go/Golang (7 yrs), C# .Net (11 yrs), JavaScript/Node.js (15 yrs), Python (15 yrs), Ruby (8 yrs), TypeScript and FlowScript (7 yrs), Java (13 yrs), C (17 yrs), PHP (14 yrs) MySQL (13 yrs), awk (6 yrs), bash (21 yrs), zsh (6 yrs), ash (6 yrs) and dash (8 yrs);_ less recent experience in _Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages.
 
-**Web technologies**: Full stack web and cloud development using _GCP and AWS; MySQL, NoSQL, ElasticSearch, Redis, CouchDB, React, Angular, jQuery, Webpack, npm/yarn, Docker, Kubernetes, SRE._
+**Web technologies**: Full stack web and cloud development using _GCP (7 yrs) and AWS (2 yrs); MySQL (13 yrs), NoSQL (8 yrs), React (7 yrs), Angular (1 yr), jQuery (13 yrs), Webpack (8 yrs), npm/yarn (8 yrs), Docker (7 yrs), Kubernetes (1 yr), ElasticSearch (1 yr), Redis (1 yr), CouchDB (1 yr), SRE (7 yrs), Datadog (6 yrs), PagerDuty (on-call 4 yrs)._
 
-**Team process and systems engineering**: Designs build systems and cloud apps, and procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong.
+**Team process and systems engineering**: Designs long-lasting build systems and cloud apps, and procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong. Seeks out feedback for improvements to training, tooling and architecture.
 
 **Security and privacy**: Catches potential attack vectors at code review. Protects coworkers' and customers' privacy as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done, and done well.
 
-**Algorithms and Data Structures**: _MaxMSP music synthesis and analysis, robot control, machine learning, OCR, pathfinding, 3D graphics and raytracing, operating systems_
+**Algorithms and Data Structures**: _recursive data structures and algorithms, big-O memory and performance analysis, robot control with state machines, machine learning, OCR, pathfinding, 3D graphics and raytracing, operating systems, filesystems, relational and nonrelational databases_
 
-**Continuous Integration Testing**: _Jenkins, TravisCI, CircleCI, GitHub Actions_
+**Continuous Integration and End-to-End Testing**: _Jenkins (8 yrs), TravisCI (13 years), CircleCI (1 yr), GitHub Actions (1 yr), Selenium (8 yrs), headless Chromium (1 yr), Docker (7 yrs)_
 
-**Data Processing and Visualization**: Log analysis and histograms, multi-sensor fusion, timeseries visualization and regression curves, principal component analysis, neural networks. _Google StackDriver, Google BigQuery, Splunk, awk, Gnuplot, Python, Matlab, Octave, LabView_
+**Data Processing and Visualization**: Log analysis and histograms, music synthesis and analysis, FFT, multi-sensor fusion, timeseries visualization and regression curves, principal component analysis, neural networks. _Google StackDriver, Google BigQuery, Splunk, awk, Gnuplot, Python, Matlab, Octave, LabView, MaxMSP_
 
 **Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown, and rendered using a Makefile and a Python DOM manipulation script. 3D printing, using self-designed models in Blender and FreeCAD.
 
@@ -39,7 +39,7 @@
 
 **Google Cloud Platform**: load balancing, scaling, hosting, URL routing and event routing. _App Engine, Cloud Functions, Cloud Storage, Pub/Sub, StackDriver, BigQuery, KMS secrets management, HAProxy_
 
-**Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management. Convenes cross-functional teams for root-cause analysis of service interruptions. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
+**Communication**: Translates Computer-ese to English. Coordinated code changes with Security, App, Translation, Design, and Marketing teams; guided other teams in modifying our team's projects; onboarded and trained new team members; presented site architecture to new management; wrote High-Level Design documents and cost analyses; documented team processes and APIs. Convenes cross-functional teams for root-cause analysis of service interruptions. _Slack (+ API), Atlassian JIRA and Confluence, BitBucket, DataDog, PagerDuty_
 
 ### Software Engineer, Coupa Software <small>(May 2015 – January 2016; San Mateo, CA)</small>
 
@@ -63,7 +63,7 @@ Modernized a browser-based experiment log system. _PHP, JavaScript, MySQL, TinyM
 
 **[github.com/chaimleib/dotfiles](https://github.com/chaimleib/dotfiles)**, 2014 onward. Portable, multi-OS environment setup scripts and automatic installers. _bash, dash, zsh, busybox, Linux (Ubuntu, Debian, Mint, Arch, Alpine, Red Hat), POSIX, Solaris, CentOS, macOS, MinGW, vim/neovim script, Language Server Protocol_
 
-**[github.com/chaimleib/rpn](https://github.com/chaimleib/rpn)**, 2023 onward. Calculator project to teach compiler tools. _C, flex, bison, parsers, compilers, interpreters, CircleCI, SonarCloud_
+**[github.com/chaimleib/rpn](https://github.com/chaimleib/rpn)**, 2023 onward. Calculator project to teach compiler-compiler tools. _C, flex, bison, parsers, compilers, interpreters, CircleCI, SonarCloud_
 
 **Pyenv v2.3.14, [github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)** February 2023. Added patches for Python's source code, versions 3.6 and 3.5, fixing for the world compilation for modern OSes on x86\_64 and Apple M1 processors. _C, patchfiles, GitHub, pyenv, Python, open-source_
 
