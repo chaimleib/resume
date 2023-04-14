@@ -1,4 +1,6 @@
-all:
+all: resume.pdf
+
+build/index.html: resume.md style.css
 	mkdir -p build
 	cp style.css build/
 	pandoc -s \
@@ -10,6 +12,9 @@ all:
 	@# postprocess.py has embedded style.css into index.html, so we don't need
 	@# these anymore
 	rm build/pandoc.html build/style.css
+
+resume.pdf: build/index.html html2pdf.sh
+	./html2pdf.sh build/index.html resume.pdf
 
 clean:
 	rm -rf build
