@@ -11,11 +11,11 @@
 
 ## Skills
 
-**Coding**: More than 20 years of experience. Recent experience in _Go/Golang (7 yrs), C# .Net (11 yrs), JavaScript/Node.js (15 yrs), Python (15 yrs), Ruby (8 yrs), TypeScript and FlowScript (7 yrs), Java (13 yrs), C (17 yrs), PHP (14 yrs) MySQL (13 yrs), awk (6 yrs), bash (21 yrs), zsh (6 yrs), ash (6 yrs) and dash (8 yrs);_ less recent experience in _Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages.
+**Coding**: More than 20 years of experience. Recent experience in _Go/Golang (7 yrs), C# .Net (11 yrs), JavaScript/Node.js (15 yrs), Python (15 yrs), Ruby (8 yrs), TypeScript and FlowScript (7 yrs), Java (13 yrs), C (17 yrs), PHP (14 yrs) MySQL (13 yrs), awk (6 yrs), bash (21 yrs), zsh (6 yrs), ash (6 yrs) and dash (8 yrs);_ less recent experience in _Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages; learns new ones quickly.
 
 **Web technologies**: Full stack web and cloud development using _GCP (7 yrs) and AWS (2 yrs); MySQL (13 yrs), NoSQL (8 yrs), React (7 yrs), Angular (1 yr), jQuery (13 yrs), Webpack (8 yrs), npm/yarn (8 yrs), Docker (7 yrs), Kubernetes (1 yr), ElasticSearch (1 yr), Redis (1 yr), CouchDB (1 yr), SRE (7 yrs), Datadog (6 yrs), PagerDuty (on-call 4 yrs)._
 
-**Team process and systems engineering**: Designs long-lasting build systems and cloud apps, and procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong. Seeks out feedback for improvements to training, tooling and architecture.
+**Systems architect**: Designs long-lasting build systems and cloud apps, and procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong. Willing to break from convention for the sake of simpler, nimbler code. Seeks out feedback for improvements to training, tooling and architecture.
 
 **Security and privacy**: Catches potential attack vectors at code review. Protects coworkers' and customers' privacy as a matter of deep personal conviction to "do no harm," while allowing the power and flexibility to get the job done, and done well.
 
@@ -25,7 +25,7 @@
 
 **Data Processing and Visualization**: Log analysis and histograms, music synthesis and analysis, FFT, multi-sensor fusion, timeseries visualization and regression curves, principal component analysis, neural networks. _Google StackDriver, Google BigQuery, Splunk, awk, Gnuplot, Python, Matlab, Octave, LabView, MaxMSP_
 
-**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown, and rendered using a Makefile and a Python DOM manipulation script. 3D printing, using self-designed models in Blender and FreeCAD.
+**Other**: Uses Arch Linux as daily driver. This resume was written in vim using Markdown, and rendered using a Makefile, pandoc, headless Chrome, and a Python DOM manipulation script. 3D printing, using self-designed models in Blender and FreeCAD.
 
 ## Work experience
 
