@@ -25,12 +25,25 @@ def get_head(doc):
     head = headList[0]
     return head
 
-def mark_revision(doc):
-    rev_meta = doc.createElement('meta')
+def get_body(doc):
+    bodyList = doc.getElementsByTagName('body')
+    if not bodyList:
+        body = doc.createElement('body')
+        root = doc.documentElement
+        root.appendChild(body)
+        bodyList = [body]
+    body = bodyList[0]
+    return body
+
+def revision(note=None):
     now = datetime.now().astimezone()
-    rev = now.strftime('Chaim Halbert, %Y-%m-%d %H:%M%z')
+    timestamp = now.strftime('%Y-%m-%d %H:%M%z')
+    return "{}-{}".format(timestamp, note) if note else timestamp
+
+def revision_meta(doc, rev):
+    rev_meta = doc.createElement('meta')
     rev_meta.setAttribute('name', 'revised')
-    rev_meta.setAttribute('content', rev)
+    rev_meta.setAttribute('content', 'Chaim Halbert, {}'.format(rev))
 
     # put a newline and indent before my revision meta
     nl = doc.createTextNode('\n  ')
@@ -43,6 +56,19 @@ def mark_revision(doc):
     if lastMeta:
         head.insertBefore(nl, before_target)
     head.insertBefore(rev_meta, before_target)
+
+def revision_div(doc, rev):
+    rev_div = doc.createElement('div')
+    rev_div.setAttribute('id', 'revision')
+    text = doc.createTextNode('Revision {}'.format(rev))
+    rev_div.appendChild(text)
+
+    headerList = doc.getElementsByTagName('header')
+    if not headerList:
+        print("warn: no header tag found")
+        return
+    header = headerList[0]
+    header.parentNode.insertBefore(rev_div, header.nextSibling)
 
 def embed_css(doc, dirname):
     head = get_head(doc)
@@ -245,7 +271,7 @@ def url_obfuscate(s):
 if __name__ == "__main__":
     def usage():
         print("\n".join([
-            'usage: {} inputFile [ -o outputFile ]',
+            'usage: {} inputFile [ -o outputFile ]'.format(sys.argv[0]),
             '',
             'Obfuscates HTML to hide private information from bots while turning them into links in the browser.',
             '',
@@ -283,7 +309,10 @@ if __name__ == "__main__":
         exit(1)
 
     doc = minidom.parse(inputFile)
-    mark_revision(doc)
+    rev_note = None
+    rev = revision(rev_note)
+    revision_meta(doc, rev)
+    revision_div(doc, rev)
     nest_div(doc)
     embed_css(doc, path.dirname(inputFile))
     link_mailto(doc)

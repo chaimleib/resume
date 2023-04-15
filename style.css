@@ -21,14 +21,23 @@
   position: absolute;
   display: inline-block;
   right: 10px;
-  top: 10px;
+  top: 4px;
   font-family: "Times New Roman", "Times", serif;
 }
+
+#revision {
+  position: absolute;
+  display: inline-block;
+  left: 10px;
+  top: 8px; /* using same top value as #bsd looks misaligned */
+  font-size: 10px;
+}
+
 
 h1 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 h2 {

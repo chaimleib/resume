@@ -1,6 +1,6 @@
 all: resume.pdf
 
-build/index.html: resume.md style.css
+build/index.html: resume.md style.css postprocess.py
 	mkdir -p build
 	cp style.css build/
 	pandoc -s \
