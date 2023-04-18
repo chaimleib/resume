@@ -13,7 +13,7 @@
 
 **Coding**: More than 20 years of experience. Recent experience in _Go/Golang (7 yrs), C# .Net (11 yrs), JavaScript/Node.js (15 yrs), Python (15 yrs), Ruby (8 yrs), TypeScript and FlowScript (7 yrs), Java (13 yrs), C (17 yrs), PHP (14 yrs) MySQL (13 yrs), awk (6 yrs), bash (21 yrs), zsh (6 yrs), ash (6 yrs) and dash (8 yrs);_ less recent experience in _Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages; learns new ones quickly.
 
-**Web technologies**: Full stack web and cloud development using _GCP (7 yrs) and AWS (2 yrs); MySQL (13 yrs), NoSQL (8 yrs), React (7 yrs), Angular (1 yr), jQuery (13 yrs), Webpack (8 yrs), npm/yarn (8 yrs), Docker (7 yrs), Express.js (3 yrs), Django (1 yr), Flask (1 yr), Kubernetes (1 yr), ElasticSearch (1 yr), Redis (1 yr), CouchDB (1 yr), SRE (7 yrs), Datadog (6 yrs), PagerDuty (on-call 4 yrs)._
+**Web technologies**: Full stack web and cloud development using _GCP (7 yrs) and AWS (2 yrs); MySQL (13 yrs), NoSQL (8 yrs), React (7 yrs), Angular (1 yr), jQuery (13 yrs), Webpack (8 yrs), npm/yarn (8 yrs), Docker (7 yrs), Express.js (3 yrs), Django (1 yr), Flask (1 yr), Kubernetes (1 yr), ElasticSearch (1 yr), Redis (1 yr), CouchDB (1 yr), Thrift (2 yrs), Protobuf (2 yrs), SRE (7 yrs), Splunk (1 yr), Datadog (6 yrs), PagerDuty (on-call 4 yrs)._
 
 **Systems architect**: Designs long-lasting build systems and cloud apps, and procedures for the problem and the team, some of which have been battle-tested for six years and are still going strong. Willing to break from convention for the sake of simpler, nimbler code. Seeks out feedback for improvements to training, tooling and architecture.
 
@@ -43,7 +43,7 @@
 
 ### Software Engineer, Coupa Software <small>(May 2015 – January 2016; San Mateo, CA)</small>
 
- Optimized RSpec test harness to work 30% faster; in-browser integration tests and unit tests; cooperated via Agile with hundreds of developers using GitHub and Atlassian JIRA. _Ruby on Rails, RSpec, MySQL and migrations, Turnip unit tests, BDD, Cucumber, JavaScript, Jenkins, bash, Jira_
+ Fintech for tracking expenses. Optimized RSpec test harness to work 30% faster; in-browser integration tests and unit tests; cooperated via Agile with hundreds of developers using GitHub and Atlassian JIRA. _Ruby on Rails, RSpec, MySQL and migrations, Turnip unit tests, BDD, Cucumber, JavaScript, Jenkins, bash, Jira_
 
 ### Software Engineer Intern, Rustici Software <small>(June 2014 - August 2014; Nashville, TN)</small>
 
