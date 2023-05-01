@@ -2,18 +2,21 @@ As of 2023:
 
 ## Highlighted Skills
 
-### **Google Cloud**
-I have been iterating on evernote.com, a GCP project, for the
-past 6-1/2 years. Originally, the site was hosted on AWS, but within my first
-year at Evernote I led the re-architecting of its functions in Google Cloud.
-This was new technology to me at the time. But the company was shutting down
-its server facilities and transitioning its edge servers over from AWS to
-GCP, so I was riding the wave. It turned out, as usual, that I was the
-fastest learner on the team, so I became the main architect by default.
+### **Cloud Infrastructure**
+I have been iterating on evernote.com, a GCP project, for the past 6-1/2 years.
+Originally, the site was hosted on AWS, but within my first year at Evernote I
+led the re-architecting of its functions in Google Cloud. This was new
+technology to me at the time. But the company was shutting down its on-premises
+server facilities and transitioning its edge servers over from AWS to GCP, so I
+was riding the wave. It turned out, as usual, that I was the fastest learner on
+the team, so I became the main architect by default.
 
 I chose to use Google App Engine for its ability to autoscale, handle edge
 node caching, and do global load balancing. GAE's designed purpose as a web
-server service was a perfect fit to our intended use-case.
+server service was a perfect fit to our intended use-case. I considered
+pursuing the use of Kubernetes for this, and I completed some tutorials about
+it, but was advised by the Ops team to use Google App Engine instead, since it
+could handle the things I wanted Kubernetes for.
 
 Rather than use MySQL with its potential for schema mismatches and migration
 chain breakages, I chose to use GC Storage to reap the benefits of both a
@@ -28,11 +31,11 @@ relay content changes to git repositories and GC Storage buckets. This would
 allow non-engineers to update the live server with new text or images without
 dev involvement or a code deploy.
 
-See also the Logging and Monitoring sections for more.
-
 I managed secrets using KMS, propagated events using PubSub, and
 customized Jenkins instances hosted within Kubernetes configured with
-Dockerfiles.
+Dockerfiles. This Kubernetes cluster was not managed by my team, but rather the
+Engineering Services team, although the scripts and Dockerfiles it ran were
+open for my team to review and make merge requests.
 
 ### **Python**
 I've been developing in Python on and off for 14 years. I fixed a
@@ -74,6 +77,12 @@ stressed separation of concerns, single sources of truth, simplicity for
 other developers, and clear organization. All of these systems I designed and
 built have lasted for more than 6 years and are still in active use.
 
+At Evernote, there were also in-house APIs. These were written using Thrift,
+Protobuf and gRPC. Some were used for user note data and editing operations;
+others for distributing server-side configs to tweak the UX, and some were even
+released to allow for third-party plugins to be written for Evernote, using any
+language for which client APIs were automatically generated.
+
 ### **Java**
 I first learned Java for my Data Structures course at UC Berkeley,
 and since then have encountered it at a few different jobs. My impression of
@@ -85,18 +94,18 @@ Software, but more so at Evernote, where the backend monolith was mostly Java
 using Spring, JUnit tests, and Mockito.
 
 ### **Go**
-I first started using Go when it was still a new language in 2016. At the time,
-it still did not have a package manager, but it had a robust standard library
-that was sufficient for making production-ready web servers. Throughout my time
-at Evernote I programmed in Go almost every day for 7 years, migrating to the
-new go.mod packaging system from govendor, and deploying evernote.com based on
-that.
+I first started using Go at Evernote when it was still a new language in 2016.
+At the time, it still did not have a package manager, but it had a robust
+standard library that was sufficient for making production-ready web servers.
+Throughout my time at Evernote I programmed in Go almost every day for 7 years,
+migrating to the new go.mod packaging system from govendor, and deploying
+evernote.com based on that.
 
-I enjoy Go for its relatively minimal syntax, its calling convention of
-returning errors as a first-class type and the ability to enforce error
-checking at the compiler level, its built-in map data type (like JavaScript's
-object), and the innovative treatment of channels and goroutines as
-multithreading primitives.
+I enjoy Go for its relatively minimal syntax, its batteries-included standard
+library, its calling convention of returning errors as a first-class type and
+the ability to enforce error checking at the compiler level, its built-in map
+data type (like JavaScript's object), and the innovative treatment of channels
+and goroutines as multithreading primitives.
 
 ### **Linux**
 I have over 20 years of experience with various flavors of Linux. My
