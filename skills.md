@@ -84,14 +84,17 @@ released to allow for third-party plugins to be written for Evernote, using any
 language for which client APIs were automatically generated.
 
 ### **Java**
-I first learned Java for my Data Structures course at UC Berkeley,
-and since then have encountered it at a few different jobs. My impression of
-Java as a student and Java as working developer were quite different. In
-school the emphasis was on algorithms and computation, but at work the
-emphasis was on abstraction, indirection, and dependency inversion, primarily
-to facilitate unit testing. I encountered some industrial Java at Rustici
-Software, but more so at Evernote, where the backend monolith was mostly Java
-using Spring, JUnit tests, and Mockito.
+I first learned Java for my Data Structures course at UC Berkeley in 2009, and
+since then have worked with it at Rustici Software and Evernote. My impression
+of Java as a student and Java as working developer were quite different. In
+school the emphasis was on algorithms and computation, but at work the emphasis
+was on patterns, indirection, and testing. At Rustici I read Java as a
+reference for implementing TinCanPython. At Evernote, I was coding their app
+backend and writing tests for my changes. We used Spring, leveled logging with
+log4j, tested with Mockito and JUnit, and built the system with a shell script
+that invoked Maven. The IDE we used was IntelliJ, although I built an alternate
+system utilizing vim, and got the Language Server Client working with the
+Eclipse project acting as LSP server.
 
 ### **Go**
 I first started using Go at Evernote when it was still a new language in 2016.
@@ -108,18 +111,18 @@ data type (like JavaScript's object), and the innovative treatment of channels
 and goroutines as multithreading primitives.
 
 ### **Linux**
-I have over 20 years of experience with various flavors of Linux. My
-earliest was with dual-booting Puppy Linux with Mac OS 8. Throughout high
-school, I gathered discarded computer parts, installed Ubuntu on the
-resulting franken-puter, and used it to test what I had learned by auditing a
-Computer Networking course at Vanderbilt University.
+I have over 20 years of experience with various flavors of Linux. My earliest
+was with dual-booting Puppy Linux with Mac OS 8 in 2000. Throughout high
+school, I gathered discarded computer parts, installed Ubuntu on the resulting
+franken-puter, and used it to test what I had learned by auditing a Computer
+Networking course at Vanderbilt University.
 
 When I went to UC Berkeley, all of our technical classes required ssh to
 CentOS, Solaris or RedHat Linux machines, which was when I began committing
-my dotfiles to GitHub. In my personal time, I twice completed the Linux From
-Scratch project, starting with a bare hard drive and compiling all the
-components of a Linux system from source code to make it bootable. Once was
-in 2010, the next time in 2021.
+my dotfiles to GitHub. In my personal time, I twice completed the [Linux From
+Scratch](https://www.linuxfromscratch.org/) project, starting with a bare hard
+drive and compiling all the components of a Linux system from source code to
+make it bootable. Once was in 2010, the next time in 2021.
 
 Professionally, I wrote shell scripts to deploy services to Linux
 servers, usually running either Ubuntu or Debian. In writing Dockerfiles, I
@@ -186,11 +189,11 @@ In my personal projects, I have used Travis CI, Circle CI, and GitHub Actions
 together with Dockerfiles to run continuous integration tests.
 
 ### **Logging**
-Logs are supposed to be aids to debugging. Extra noise is a
-distraction, so I strive to minimize that, but when there is a problem, I
-make an effort to provide stack traces with files, function signatures,
-important argument values and line numbers. This makes debugging much faster
-and more pleasant, and I created an errors package in Go for the purpose.
+Logs are supposed to be aids to debugging. Extra noise is a distraction, so I
+strive to minimize that, but when there is a problem, I make an effort to
+provide stack traces with files, function signatures, important argument values
+and line numbers. This makes debugging much faster and more pleasant, and I
+created an errors package in Go for the purpose.
 
 When running evernote.com locally, an error would print an indented chain of
 errors that told me exactly why the program failed, including the arguments
@@ -210,17 +213,16 @@ occasionally filter and plot histograms of log entries using shell scripts
 and GNUplot.
 
 ### **Monitoring**
-At Evernote, I configured and maintained many monitoring
-systems. I used Pingdom with synthetic requests to test for uptime, Datadog
-to graph and monitor 400s, 500s and response times, and PagerDuty to draw our
-attention whenever the server appeared down. This was rare, and usually
-caused by a service provider being down, like AWS, Cloudflare, or Google
-Cloud. Once, however, there was an issue with Google PubSub exceeding the
-quota of subscriptions to a channel, causing 500s as the server failed to
-boot. I resolved the immediate issue by deleting unused subscriptions by the
-hundreds, and writing a script to do this cleanup automatically on a regular
-basis. Eventually I removed the dependency on PubSub and used polling
-instead.
+At Evernote, I configured and maintained many monitoring systems. I used
+Pingdom with synthetic requests to test for uptime, Datadog to graph and
+monitor 400s, 500s and response times, and PagerDuty to draw our attention
+whenever the server appeared down. This was rare, and usually caused by a
+service provider being down, like AWS, Cloudflare, or Google Cloud. Once,
+however, there was an issue with Google PubSub exceeding the quota of
+subscriptions to a channel, causing 500s as the server failed to boot. I
+resolved the immediate issue by deleting unused subscriptions by the hundreds,
+and writing a script to do this cleanup automatically on a regular basis.
+Eventually I removed the dependency on PubSub and used polling instead.
 
 ### **AI/Machine Learning**
 I have classroom experience with Prof. Andrew Ng
@@ -293,3 +295,4 @@ Earlier, in middle school, I took a computer programming class, where we
 learned trigonometry in order to perform rotations and perspective distortions
 on game sprites, as well as produce synchronized audio visualizations using the
 METAL Basic programming language.
+
