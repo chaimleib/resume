@@ -29,6 +29,12 @@
 
 ## Work experience
 
+### Golang Senior Software Engineer, Contractor (via Randstad USA) - Bank of America <small>(April 2023 - current)</small>
+
+**Added secrets management capabilities to CLI compute resource broker**: Automated process to provision compute resources for internal applications on OpenShift Cluster/Kubernetes. _Go/Golang, Hashicorp Vault, OpenShift Cluster/Kubernetes, Cobra, Gorm, Gin, Swagger (Swaggo), postgresql, BitBucket, Agile_
+
+**Mentored other engineers in Linux setup**: Documented onboarding processes and guided other devs in setting up Linux servers. _Linux, bash, Git Bash, postgresql, ssh, Go, Markdown, Confluence_
+
 ### Cloud Software Engineer, Evernote <small>(June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)</small>
 
 **Led the re-architecting and migration of [evernote.com](https://evernote.com) from PHP with AWS to Go and C# with Google App Engine**: My system design has been in production for six years so far. Recursive component template system; 26-language localization system; CMS integration for non-programmer edits to site; tooling for deploy, preview, unit test, and code quality; query tools to answer high-level questions about the web service. _Google Cloud Platform, AWS, Ubuntu, Debian and Alpine Linux, Docker, Kubernetes, git, Go/Golang, C#, Perl, PHP, Java, bash, dash, zsh, Python, MySQL, NoSQL, Redis, JavaScript/Node.js, Jenkins CI, webpack, React, yarn/npm, SASS, awk, grep, sed, jq, SRE_
