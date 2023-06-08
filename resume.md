@@ -29,11 +29,11 @@
 
 ## Work experience
 
-### Golang Senior Software Engineer, Contractor (via Randstad USA) - Bank of America <small>(April 2023 - current)</small>
+### Senior Golang Software Engineer, Bank of America, contract via Randstad USA <small>(April 2023 - current)</small>
 
-**Added secrets management capabilities to CLI compute resource broker**: Automated process to provision compute resources for internal applications on OpenShift Cluster/Kubernetes. _Go/Golang, Hashicorp Vault, OpenShift Cluster/Kubernetes, Cobra, Gorm, Gin, Swagger (Swaggo), postgresql, BitBucket, Agile_
+**Added secrets management capabilities to compute resource provisioner**: Automated process to provision internal applications on OpenShift Cluster/Kubernetes. _Go/Golang, Hashicorp Vault, OpenShift Cluster/Kubernetes, Cobra, Gorm, Gin, Swagger (Swaggo), postgresql, BitBucket, Agile_
 
-**Mentored other engineers in Linux setup**: Documented onboarding processes and guided other devs in setting up Linux servers. _Linux, bash, Git Bash, postgresql, ssh, Go, Markdown, Confluence_
+**Mentored other engineers in Linux setup and Golang**: Documented onboarding processes and guided other devs in setting up Linux servers. _Linux, bash, Git Bash, postgresql, ssh, Go, Markdown, Confluence_
 
 ### Cloud Software Engineer, Evernote <small>(June 2016 - February 2023; Redwood City, CA four years; then remote in Phoenix, AZ)</small>
 
