@@ -20,5 +20,5 @@ an FPGA, designed to locate noises in a room using an array of microphones.
 
 Most recently I got interested in amateur radio. I passed at the Amateur Extra
 level, which requires knowledge of Software-Defined Radio, heterodyning, FFTs,
-quadrature encoding, Smith charts, the transmission line model, signal filters
+quadrature I/Q signaling, Smith charts, the transmission line model, signal filters
 and other signal processing topics that reviewed what I had learned in college.
