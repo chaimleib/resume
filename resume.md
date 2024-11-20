@@ -13,6 +13,12 @@ Experienced Go, TypeScript, C# .Net and Python Software Developer with diverse t
 
 ## Professional experience
 
+### Senior Software Engineer, American Express, contract via Turnberry Solutions, Inc. <small>(October 2024 - current)</small>
+
+**Audited PaaS authentication/authorization system for security and maintainability**: Eliminated DoS vulnerabilities, established coding style standards and linting, doubled test coverage. _Go, LDAP, Node.js, Postman, Kubernetes_
+
+**Created CLI interface to web API service**: Improved request speed by 10x over prior server-side solution by optimizing backoff strategies and introducing concurrency with goroutines and channels. _Go, Linux, bash_
+
 ### Software Engineer, Amazon, contract via Harvey Nash <small>(June 2024 - September 2024)</small>
 
 **Migrated dynamic Homepage service between cloud clusters in Europe**: Checked dependent service support and confirmed compatibility prior to upgrades for new cluster location. (Originally interviewed for Typescript, Python and cloud architecting; then the project changed from the job description). _Amazon internal tooling, AWS, bash_
