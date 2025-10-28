@@ -13,7 +13,9 @@ Experienced Go, TypeScript, C# .Net and Python Software Developer with diverse t
 
 ## Professional experience
 
-### Senior Software Engineer, American Express, contract via Turnberry Solutions, Inc. <small>(October 2024 - current)</small>
+### Senior Software Engineer, American Express <small>(February 2025 - current)</small>
+
+### Senior Software Engineer, American Express, contract via Turnberry Solutions, Inc. <small>(October 2024 - January 2025)</small>
 
 **Audited PaaS authentication/authorization system for security and maintainability**: Eliminated DoS vulnerabilities, established coding style standards and linting, doubled test coverage. _Go, LDAP, Node.js, Postman, Kubernetes_
 
