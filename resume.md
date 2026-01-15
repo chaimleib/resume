@@ -1,5 +1,4 @@
 <div id="bsd" dir="rtl">בס״ד</div>
-
 #### Phoenix, AZ 85016, local to area or remote
 
 #### [github.com/chaimleib](https://github.com/chaimleib) &mdash; [linkedin.com/in/chaim-halbert](https://linkedin.com/in/chaim-halbert) &mdash; <span class="link-mailto">chaim.leib.halbert@gmail.com</span> <span class="noprint">&mdash; <span class="link-tel">&#54;1&#53;&ndash;&#57;4&#53;&ndash;3&#51;70</span></span>
@@ -14,6 +13,18 @@ Experienced Go, TypeScript, C# .Net and Python Software Developer with diverse t
 ## Professional experience
 
 ### Senior Software Engineer, American Express <small>(February 2025 - current)</small>
+
+**Led the team to implement distributed service diagnostics with OpenTelemetry**:
+Created demo servers demonstrating how to propagate traces though Go contexts
+and between networked services.
+Taught the team, and migrated projects from OpenTracing to OTEL.
+_Go, tracing, logging, OpenTelemetry, observability, Prometheus_
+
+**Trained others in Go concurrency patterns**: Wrote a 60-page guide in
+with example programs, diagrams, and debugging techniques
+based on real code reviews. Presented to Go engineers across the company at
+the annual company engineering convention. _goroutines, channels, concurrency,
+parallel computing_
 
 ### Senior Software Engineer, American Express, contract via Turnberry Solutions, Inc. <small>(October 2024 - January 2025)</small>
 
