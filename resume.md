@@ -60,7 +60,9 @@ parallel computing_
 
 ## Skills summary
 
-**Coding**: More than 20 years of experience. Recent experience in _Go/Golang (9 yrs, current primary language), C# .Net (11 yrs), JavaScript/Node.js (16 yrs), Python (17 yrs), TypeScript (8 yrs, incl. Flowscript), C (17 yrs), MySQL (13 yrs), bash (23 yrs), zsh (7 yrs), awk (9 yrs);_ less recent and occasional experience in _Java (13 yrs), PHP (14 yrs), ash (6 yrs) and dash (8 yrs), Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages; learns new ones quickly.
+**Coding**: More than 20 years of experience. Recent experience in _Go/Golang (11 yrs, current primary language), C# .Net (11 yrs), JavaScript/Node.js (16 yrs), Python (17 yrs), TypeScript (8 yrs, incl. Flowscript), C (17 yrs), MySQL (13 yrs), bash (23 yrs), zsh (7 yrs), awk (9 yrs);_ less recent and occasional experience in _Java (13 yrs), PHP (14 yrs), ash (6 yrs) and dash (8 yrs), Perl, C++, Objective-C, Swift, Matlab, Octave, Verilog, Visual Basic .Net, Lua, ladder logic, PLC structured text/IEC 61131-3, Scheme, LISP._ Can write parallel and concurrent code. Creates _parsers, compilers and interpreters_ for new mini-languages. &gt;50 languages; learns new ones quickly.
+
+**AI**: Leverages Devin.ai to plan large changes and research domain knowledge; Microsoft Copilot, GPT and Claude to write code. At home, self-hosts Dockerized Open WebUI and Ollama to power chat, code auto-completion, and a news aggregator.
 
 **Web technologies**: Full stack web and cloud development using _GCP (7 yrs), AWS (2 yrs) and OpenShift (1 yr); MySQL (13 yrs), PostgresQL (2 yrs), NoSQL (8 yrs), React (7 yrs), Angular (1 yr), jQuery (13 yrs), Webpack (8 yrs), npm/yarn (8 yrs), Docker/Podman (8 yrs), Express.js (3 yrs), Django (1 yr), Flask (1 yr), Kubernetes (2 yrs), ElasticSearch (1 yr), Redis (1 yr), CouchDB (1 yr), Thrift (2 yrs), Protobuf (2 yrs), SRE (7 yrs), Splunk (1 yr), Datadog (6 yrs), PagerDuty (on-call 4 yrs)._
 
@@ -70,7 +72,7 @@ parallel computing_
 
 **Continuous Integration and End-to-End Testing**: _Jenkins (8 yrs), TravisCI (13 years), CircleCI (1 yr), GitHub Actions (1 yr), Selenium (8 yrs), headless Chromium (1 yr), Docker (7 yrs)_
 
-**Other**: Uses Fedora Linux as daily driver. This resume was written in vim using Markdown, and rendered using a Makefile, pandoc, headless Chrome, and a Python DOM manipulation script. Licensed commercial drone pilot (since August 2024). 3D printing, using self-designed models in Blender and FreeCAD.
+**Other**: Uses Fedora Linux as daily driver. This resume was written in Neovim using Markdown, and rendered using a Makefile, pandoc, headless Chrome, and a Python DOM manipulation script. Licensed commercial drone pilot (since August 2024). 3D printing, using self-designed models in Blender and FreeCAD.
 
 ## Notable personal projects
 
