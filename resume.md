@@ -12,7 +12,7 @@ Experienced Go, TypeScript, C# .Net and Python Software Developer with diverse t
 
 ## Professional experience
 
-### Senior Software Engineer, American Express <small>(February 2025 - current)</small>
+### Senior Software Engineer, American Express <small>(February 2025 - December 2026)</small>
 
 **Led the team to implement distributed service diagnostics with OpenTelemetry**:
 Created demo servers demonstrating how to propagate traces though Go contexts
