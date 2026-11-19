@@ -5,7 +5,6 @@ build/index.html: resume.md style.css postprocess.py
 	cp style.css build/
 	pandoc -s \
 		-c style.css \
-		--metadata title="Chaim Halbert" \
 		resume.md \
 		-o build/pandoc.html
 	./postprocess.py build/pandoc.html -o build/index.html

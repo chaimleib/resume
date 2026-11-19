@@ -1,7 +1,19 @@
-<div id="bsd" dir="rtl">בס״ד</div>
-#### Phoenix, AZ 85016, local to area or remote
+<header>
+  <div id="bsd" dir="rtl">בס״ד</div>
+</header>
 
-#### [github.com/chaimleib](https://github.com/chaimleib) &mdash; [linkedin.com/in/chaim-halbert](https://linkedin.com/in/chaim-halbert) &mdash; <span class="link-mailto">chaim.leib.halbert@gmail.com</span> <span class="noprint">&mdash; <span class="link-tel">&#54;1&#53;&ndash;&#57;4&#53;&ndash;3&#51;70</span></span>
+# Chaim Halbert
+
+<div id="location" class="subtitle">Phoenix, AZ 85016, local to area or remote</div>
+
+<ul id="sites" class="subtitle">
+  <li class="link-github">[github.com/chaimleib](https://github.com/chaimleib)</li>
+  <li class="link-linkedin">[linkedin.com/in/chaim-halbert](https://linkedin.com/in/chaim-halbert)</li>
+</ul>
+<ul id="contact" class="subtitle">
+  <li class="link-mailto noprint">chaim.leib.halbert@gmail.com</li>
+  <li class="link-tel">&#54;1&#53;&ndash;&#57;4&#53;&ndash;3&#51;70</li>
+</ul>
 
 ## Summary
 

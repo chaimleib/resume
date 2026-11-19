@@ -16,61 +16,108 @@ from xml.dom import minidom
 from collections import namedtuple, deque
 
 def get_head(doc):
+    """
+    Returns the head element of a document.
+    If not found, creates and inserts it.
+    """
     headList = doc.getElementsByTagName('head')
-    if not headList:
-        head = doc.createElement('head')
-        root = doc.documentElement
-        root.insertBefore(head, root.firstChild)
-        headList = [head]
-    head = headList[0]
+    if headList:
+        return headList[0]
+    # Not there, create the head.
+    head = doc.createElement('head')
+    root = doc.documentElement
+    root.insertBefore(head, root.firstChild)
     return head
 
 def get_body(doc):
+    """
+    Returns the body element of a document.
+    If not found, creates and inserts it.
+    """
     bodyList = doc.getElementsByTagName('body')
-    if not bodyList:
-        body = doc.createElement('body')
-        root = doc.documentElement
-        root.appendChild(body)
-        bodyList = [body]
-    body = bodyList[0]
+    if bodyList:
+        return bodyList[0]
+    # Not there, create the body.
+    body = doc.createElement('body')
+    root = doc.documentElement
+    root.appendChild(body)
     return body
 
+def get_header(doc, body=None):
+    """
+    Returns the body>header element of a document.
+    If not found, creates and inserts it at the beginning of the body.
+    If body is None, uses get_body(doc) to obtain it.
+    """
+    if body is None:
+        body = get_body(doc)
+    headerList = body.getElementsByTagName('header')
+    if headerList:
+        return headerList[0]
+
+    # Not there, create the header.
+    header = doc.createElement('header')
+    # All direct children of body start at 1 indent of 2 spaces.
+    # So, that is the indent for the close header tag;
+    # it is a direct child of body.
+    header.appendChild(doc.createTextNode('\n  '))
+
+    # Insert the header.
+    if not body.firstChild: # body is empty
+        # Add a newline to shift the close body tag to a new line.
+        # The body and close body have 0 indent.
+        body.appendChild(doc.createTextNode('\n'))
+    body.insertBefore(header, body.firstChild)
+    body.insertBefore(doc.createTextNode('\n  '), body.firstChild)
+    return header
+
 def revision(note=None):
+    """
+    Returns a string timestamping the document.
+    """
     now = datetime.now().astimezone()
     timestamp = now.strftime('%Y-%m-%d %H:%M%z')
     return "{}-{}".format(timestamp, note) if note else timestamp
 
 def revision_meta(doc, rev):
+    """
+    Inserts the revision string as a `<meta name="revised" content="..."/>`
+    after the last head>meta,
+    or if there are no metas, at the start of head.
+    """
     rev_meta = doc.createElement('meta')
     rev_meta.setAttribute('name', 'revised')
     rev_meta.setAttribute('content', 'Chaim Halbert, {}'.format(rev))
 
-    # put a newline and indent before my revision meta
-    nl = doc.createTextNode('\n  ')
-
     head = get_head(doc)
+    # Find where to insert the rev_meta.
     lastMeta = None
     for meta in head.getElementsByTagName('meta'):
         lastMeta = meta
-    before_target = lastMeta.nextSibling if lastMeta else None
-    if lastMeta:
-        head.insertBefore(nl, before_target)
+    before_target = lastMeta.nextSibling if lastMeta else head.firstChild
     head.insertBefore(rev_meta, before_target)
+    head.insertBefore(doc.createTextNode('\n  '), rev_meta)
 
 def revision_div(doc, rev):
+    """
+    Inserts the revision string as a div#revision
+    as the first child of body>header.
+    """
     rev_div = doc.createElement('div')
     rev_div.setAttribute('id', 'revision')
     text = doc.createTextNode('Revision {}'.format(rev))
     rev_div.appendChild(text)
 
-    headerList = doc.getElementsByTagName('header')
-    if not headerList:
-        print("warn: no header tag found")
-        return
-    header = headerList[0]
-    header.parentNode.insertBefore(rev_div, header.nextSibling)
+    body = get_body(doc)
+    header = get_header(doc, body)
+    header.insertBefore(rev_div, header.firstChild)
+    header.insertBefore(doc.createTextNode('\n  '), header.firstChild)
 
 def embed_css(doc, dirname):
+    """
+    Replaces `<link rel="stylesheet" href="path"/>` with
+    `<style>contents of path</style>`.
+    """
     head = get_head(doc)
     for link in head.getElementsByTagName('link'):
         if link.getAttribute('rel') != 'stylesheet':
