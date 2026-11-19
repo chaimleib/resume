@@ -282,6 +282,8 @@ def html_breakup(s):
 def html_obfuscate(s):
     result = deque()
     for i, c in enumerate(s):
+        if c == '\n':
+            continue
         if i & 0x1:
             result.append(entity_obfuscate(c))
         else:
@@ -291,6 +293,9 @@ def html_obfuscate(s):
     return ''.join(char for char in result)
 
 def html_unobfuscate(s):
+    """
+    Replaces entities with their unicode byte sequence.
+    """
     result = deque()
     word = ''
     for c in s:
@@ -307,6 +312,9 @@ def html_unobfuscate(s):
     return ''.join(char for char in result)
 
 def url_obfuscate(s):
+    """
+    Replaces lots of characters with HTML entities.
+    """
     result = deque()
     for i, c in enumerate(s):
         if i & 0x1 or c in '@.':
