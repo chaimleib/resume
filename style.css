@@ -17,10 +17,19 @@
   }
 }
 
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  margin: 64px 8px;
+}
+
 #revision {
   display: block;
   margin-top: 8px; /* using same top value as #bsd looks misaligned */
-  font-size: 12px;
+  font-size: 14px;
 }
 
 header {
@@ -38,41 +47,76 @@ header {
 .subtitle {
   display: flex;
   justify-content: center;
-  margin-bottom: 6px;
-}
-
-ul.subtitle {
-  /* show on one line, separating items with emdash */
-  list-style: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-  margin-bottom: 6px;
-}
-
-ul.subtitle li:not(:last-child)::after {
-  content: "&#8212;"; /* emdash */
-  padding: 0 0.3em;
-}
-
-h1 {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 12px;
 }
 
-h2 {
-  font-weight: bold;
-  margin-top: 12px;
+.subtitle ul {
+  /* show on one line, separating items with a glyph */
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0;
+  width: 370px;
+}
+
+.subtitle li:not(:first-child) {
+  margin-left: 0.8em;
+}
+
+.summary {
+  font-size: 24px;
+  /* font-weight: bold; */
+  margin: 18px auto;
+  width: 280px;
+}
+
+.summary p {
+  margin: 0;
+  text-align: justify;
+  text-align-last: justify;
+  width: 100%;
+}
+
+.summary ul {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 4px;
+  width: 100%;
+}
+
+#location {
+  margin: 18px auto;
+  font-size: 18px;
+}
+
+#mottos {
+  font-size: 24px;
+  margin: 18px 0;
+}
+
+h1 { /* Name */
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
   margin-bottom: 0;
+  font-variant-caps: small-caps;
+  /* letter-spacing: -0.01em; */
+  word-spacing: 0.2em;
+}
+
+h2 { /* Major section */
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 16px;
   font-variant-caps: small-caps;
 }
 
-h3 {
+h3 { /* Sub-section */
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 0;
-  margin-left: 4px;
+  margin-left: 0;
 }
 
 h4 {
@@ -89,16 +133,32 @@ small {
 p {
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 20px;
-  text-indent: 16px;
+  margin-left: 36px;
 }
 
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
+dl {
+  display: block;
+  margin-left: 2em;
 }
 
-ul ul {
-  margin-left: 0px;
-  padding-left: 16px;
+dt {
+  display: inline;
+  font-weight: bold;
+}
+
+dt::before {
+  content: "";
+  display: block; /* force a newline before each dt */
+  margin-top: 12px;
+}
+
+dt::after {
+  content: ": ";
+  font-weight: normal;
+}
+
+dd {
+  display: inline;
+  margin-left: 0;
+  margin-right: 0;
 }
